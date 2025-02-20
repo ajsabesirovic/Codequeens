@@ -1,0 +1,14 @@
+p {
+  color: white;
+  background-color: black;
+  color: blue;
+  color: aqua;
+  color: blueviolet;
+}
+/* u slucaju da imamo vise pojavljivanja color propertija,
+ uzima se vrednost poslednjeg pojavljivanja 
+ takozvani OVERRIDING */
+
+h3 {
+  color: blue;
+}

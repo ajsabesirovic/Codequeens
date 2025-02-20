@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drugi cas</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- link povezuje eksterni CSS fajl (style.css) sa HTML-om -->
+    <!-- Ako se style.css ne nalazi u istom folderu kao HTML dokument ====>
+    1. Ako je u podfolderu (css/style.css) koristite href="css/style.css"
+    2️. Ako je u višem folderu (../style.css) iznad trenutnog HTML fajla koristite href="../style.css"
+    3️. Ako je u drugom drugom folderu (../styles/style.css) koristite href="../styles/style.css"  -->
+
+    <style>
+      h2 {
+        color: beige;
+      }
+    </style>
+    <!-- style tag se koristi za pisanje internog CSS-a unutar HTML-a -->
+
+  </head>
+  <body>
+    
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <!-- a (anchor) tag kreira hiperlink; 
+         href određuje URL destinaciju, 
+         target="_blank" otvara link u novom tabu -->
+    <!-- ukoliko izostavimo target, po default-u ce otvarati link u istom tabu -->
+
+    <a href="index.html">Lokalni fajl</a>
+    <!-- href="index.html" vodi ka lokalnom fajlu (index.html) -->
+
+    <ul>
+      <!-- ul (unordered list) kreira neuređenu listu -->
+      <li>Matematika</li>
+      <li>Srpski</li>
+      <li>Engleski</li>
+      <!-- li (list item) označava stavke liste -->
+    </ul>
+
+    <ol>
+      <!-- ol (ordered list) kreira numerisanu listu -->
+      <li>Matematika</li>
+      <li>Srpski</li>
+      <li>Engleski</li>
+    </ol>
+
+    <img src="download.jpeg" alt="Slika" />
+    <!-- img tag prikazuje sliku;
+         src određuje putanju slike,
+         alt opisuje sliku u slučaju da se ne prikaže -->
+
+    <p style="color: red; background-color: blue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatum.
+    </p>
+    <!--style atribut omogućava inline CSS podešavanje boje i pozadine -->
+
+    <h1 style="color: aqua">Inline css</h1>
+    <!-- style atribut koristi inline CSS da mu dodeli plavu boju -->
+
+    <h2>Internal css</h2>
+    <!-- h2 naslov koristi interni CSS iz <style> sekcije u <head> -->
+
+    <h3>External css</h3>
+    <!-- h3 naslov koristi eksterni CSS iz style.css -->
+  </body>
+</html>
+
+<!-- Kada postoji više stilova koji se odnose na isti HTML element, pregledač
+određuje koji će stil primeniti na osnovu specifičnosti i redosleda pravila.
+
+1. Inline CSS (Najviši prioritet) Direktno se primenjuje na HTML element unutar
+style atributa. Zbog toga uvek preuzima prednost nad svim drugim stilovima.
+Ovaj stil će uvek biti primenjen, bez obzira na stilove u <style> tagu (internal css) ili u eksternom CSS fajlu.
+
+2. Internal CSS (Srednji prioritet)
+Definiše se u <style> sekciji unutar <head>.
+Primeniće se ako ne postoji jači stil (npr. inline CSS).
+Ako ne postoji inline stil, primenjuje se internal.
+
+3. External CSS (Najniži prioritet među korisničkim stilovima)
+Definiše se u posebnom .css fajlu i učitava pomoću <link>.
+Primeniće se samo ako isti element nema inline ili internal stil.
+
+
