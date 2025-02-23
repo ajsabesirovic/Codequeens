@@ -1,0 +1,49 @@
+body {
+  /* background-color: black; Komentarisana crna boja pozadine */
+  background-image: url("img_girl.jpg"); /* Postavljanje slike kao pozadine */
+  background-repeat: no-repeat; /* Sprečava ponavljanje slike */
+  background-attachment: fixed; /* Pozadina ostaje fiksirana prilikom skrolovanja */
+  background-size: cover; /* Slika prekriva ceo ekran */
+  background-size: 100% 100%; /* Slika se prilagođava dimenzijama ekrana */
+}
+p {
+  color: red; /* Crvena boja teksta */
+  /* color: rgb(0, 255, 0); Alternativni način definisanja boje pomoću RGB formata, R-red,G-green,B-blue vrednosti u opsegu [0-255] */
+  /* color: rgba(128, 59, 59, 0.5); RGB + alfa (transparentnost), opseg 0-1 */
+  /* color: #fff433; HEX zapis boje */
+  /* color: hsl(hue, saturation, lightness); Alternativni HSL format za boju */
+
+  font-family: "Courier New", Courier, monospace; /* Font porodica */
+  font-size: 20px; /* Veličina fonta */
+
+  border: 30px dotted blue; /* Postavlja ivicu oko elementa.
+  Može imati debljinu, stil (solid, dashed, dotted) i boju.
+   */
+  border-color: black; /* Boja okvira se menja u crnu */
+  border-width: 1px; /* Debljina okvira */
+  border-style: solid; /* Stil okvira postavljen na punu liniju */
+  border-radius: 3px; /* Zaobljenje ivica */
+
+  padding: 100px; /* prostor oko content-a elemnta */
+  padding-bottom: 0;
+
+  margin: 10px /*prostor oko elemenata, izvan bordera*/;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+/* Stilizacija naslova i paragrafa, grupisanje */
+h1,
+h6,
+p {
+  font-size: 30px; /* Podešavanje veličine fonta */
+  color: rgb(34, 197, 43);
+}
+
+h1 {
+  text-align: center; /* Poravnanje teksta u centru */
+}
+
+h6 {
+  text-align: right; /* Poravnanje teksta desno */
+}
