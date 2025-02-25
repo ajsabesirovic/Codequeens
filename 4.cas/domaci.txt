@@ -1,0 +1,27 @@
+Napravite HTML formu za registraciju koja sadrži sledeće elemente:
+
+-- Polja za unos:
+
+Korisničko ime (obavezno, minimum 5 karaktera)
+Email (obavezno, mora sadržati "@")
+Broj telefona (obavezno, mora sadržati tačno 10 cifara)
+Šifra (obavezno, minimum 8 karaktera)
+
+-- Izbor kategorije korisnika:
+
+Student
+Profesionalac
+Ostalo
+
+-- Checkbox polja za oblasti interesovanja:
+
+Web razvoj
+Data Science
+UX/UI dizajn
+IT bezbednost
+AI i mašinsko učenje
+
+-- Checkbox za prihvatanje uslova korišćenja (obavezno)
+
+-- Dugmad:
+"Prijavi se" i "Resetuj formu"

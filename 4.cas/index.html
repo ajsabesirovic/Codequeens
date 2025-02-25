@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forme</title>
+  </head>
+  <body>
+    <form>
+      <!-- Početak HTML forme za unos podataka -->
+
+      <label for="ime">Ime:</label>
+      <!-- Labela za polje "ime", omogućava bolje povezivanje sa inputom -->
+      <input
+        type="text"
+        id="ime"
+        name="ime"
+        placeholder="Unesite ime"
+        required
+        minlength="3"
+      />
+      <!-- Input je polje u koje unosimo podatke -->
+      <!-- Polje za unos imena; "required" znači da je obavezno, a "minlength=3" zahteva bar 3 slova -->
+      <!-- Po default-u type u inputu ima vrednost text tako da ga mozemo izostaviti -->
+      <!-- Atributi "for" (u label) i "id" (u input) trebaju imati iste vrednosti kako bi ih povezali
+           Kada ih povezemo na taj nacin, klikom na label fokusira se input  -->
+      <br />
+      <!-- Prelazak u novi red -->
+
+      <label for="prezime">Prezime:</label>
+      <input
+        type="text"
+        id="prezime"
+        name="prezime"
+        placeholder="Unesite prezime"
+        required
+      />
+
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Unesite vaš email"
+        required
+      />
+      <!-- Polje za unos email adrese, koristi validaciju za proveru ispravnosti email formata -->
+
+      <br />
+
+      <label for="password">Šifra:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Unesite vašu šifru"
+        required
+      />
+      <!-- Polje za unos lozinke, maskirano za sigurnost -->
+
+      <br />
+
+      <label for="godine">Godine:</label>
+      <input
+        type="number"
+        id="godine"
+        name="godine"
+        min="18"
+        max="35"
+        required
+      />
+      <!-- Polje za unos godina, ograničeno između 18 i 35 pomocu atributa min i max -->
+
+      <br />
+
+      <label for="datum_rodjenja">Datum rođenja:</label>
+      <input type="date" id="datum_rodjenja" name="datum_rodjenja" required />
+      <!-- Polje za unos datuma rođenja -->
+
+      <br />
+
+      <label>Pol:</label>
+      <!-- Labela za pol, ispod dolaze radio dugmići -->
+      <label>
+        <input type="radio" name="pol" value="musko" required /> Muško
+      </label>
+      <label> <input type="radio" name="pol" value="zensko" /> Žensko </label>
+      <!-- Radio dugmići za odabir pola, "name=pol" grupiše ih tako da samo jedan može biti izabran -->
+
+      <br />
+      <label>Interesovanja:</label>
+      <!-- Checkbox polja omogućavaju korisniku da izabere više opcija -->
+      <label>
+        <input type="checkbox" name="interesovanja" value="programiranje" />
+        Programiranje
+      </label>
+      <label>
+        <input type="checkbox" name="interesovanja" value="dizajn" /> Dizajn
+      </label>
+      <label>
+        <input type="checkbox" name="interesovanja" value="marketing" />
+        Marketing
+      </label>
+      <label>
+        <input type="checkbox" name="interesovanja" value="sport" /> Sport
+      </label>
+      <!-- Korisnik može označiti više interesovanja, jer checkbox omogućava višestruki izbor -->
+
+      <br />
+
+      <button type="submit" style="background-color: blue; padding: 9px">
+        Prijavi se
+      </button>
+      <!-- Dugme za slanje forme, sa prilagođenim stilom -->
+
+      <button type="reset">Resetuj formu</button>
+      <!-- Dugme za resetovanje forme, briše sve unete podatke -->
+    </form>
+  </body>
+</html>
