@@ -1,0 +1,15 @@
+table,
+th,
+td {
+  border: 1px solid black; /* Dodaje crnu ivicu (border) od 1px svim tabelarnim elementima */
+  border-collapse: collapse; /* Spaja ivice susednih ćelija u jednu, da ne budu duple */
+}
+
+table {
+  width: 100%; /* Tabela zauzima 100% širine roditelja */
+}
+th,
+td {
+  padding: 3px 10px; /* Dodaje prostor oko teksta u ćelijama */
+  text-align: left; /* Tekst u ćelijama je levo poravnat */
+}
