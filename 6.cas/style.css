@@ -1,0 +1,56 @@
+table {
+  padding: 30px; /* Dodaje unutrašnji razmak unutar tabele */
+}
+
+table,
+th,
+td {
+  border: 1px solid black; /* Dodaje crnu ivicu tabeli, zaglavljima (th) i ćelijama (td) */
+  /* border-collapse: collapse;  <-- Ako je aktivan, uklanja razmak između ivica ćelija */
+  border-spacing: 20px; /* Razmak između ćelija */
+}
+
+th,
+td {
+  padding: 5px 15px; /* Unutrašnji razmak unutar zaglavlja i ćelija */
+}
+
+/* Klase oznacimo sa .nazivKlase */
+.prvaKlasa {
+  background-color: rgb(63, 63, 214);
+  color: tomato;
+}
+
+.drugaKlasa {
+  background-color: chartreuse;
+}
+
+/* ID oznacimo sa #nazivID */
+#prviId {
+  background-color: aqua;
+}
+
+li {
+  background-color: pink; /* Svi <li> elementi imaju roze pozadinu */
+}
+/* ali npr. klase i ID imaju prednost nad selektorima koji selektuju samo elemente */
+a {
+  text-decoration: none; /* Uklanja podvlačenje linkova */
+  color: black; /* Postavlja crnu boju teksta linkova */
+}
+
+/* Alternativni stil za liste
+nth-child i nth-last-child su pseudo klase. */
+/* li:nth-child(odd) {
+      background-color: lightgray;  <-- Svaki neparni <li> element ima svetlosivu pozadinu
+    }
+    li:nth-child(even) {
+      background-color: rgb(38, 63, 72);  <-- Svaki parni <li> element ima tamniju plavu pozadinu
+    }
+    li:nth-child(3) {
+      color: red;  <-- Treći <li> element ima crveni tekst
+    }
+    li:nth-last-child(1) {
+      background-color: pink;  <-- Poslednji <li> element ima roze pozadinu
+      kad je u pitanju nth-lst-child, brojevi se računaju od kraja
+    } */

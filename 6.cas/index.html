@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table>
+      <caption>
+        Naziv tabele
+      </caption>
+      <!-- caption tag predstavlja naslov tabele -->
+
+      <colgroup>
+        <col style="background-color: pink" span="3" />
+        <!-- Prve tri kolone obojene u roze -->
+        <col style="background-color: aqua" />
+        <!-- Četvrta obojena u plavo -->
+      </colgroup>
+
+      <tr>
+        <th colspan="2" class="prvaKlasa">Naslov 1</th>
+        <!-- Ovaj <th> se prostire preko 2 kolone -->
+        <th colspan="4">Naslov 2</th>
+        <!-- Ovaj <th> se prostire preko 4 kolone -->
+      </tr>
+      <tr>
+        <td>tacka 1.</td>
+        <td>2.</td>
+        <td>3.</td>
+      </tr>
+      <tr>
+        <td>AJLA</td>
+        <td>.</td>
+        <td>.</td>
+        <td rowspan="2">NOVI TD</td>
+        <!-- Ova ćelija se prostire preko dva reda -->
+      </tr>
+      <tr>
+        <td>.</td>
+        <td>.</td>
+        <td>.</td>
+      </tr>
+    </table>
+
+    <ul>
+      <li class="prvaKlasa drugaKlasa">List item 1</li>
+      <!-- Ima dve klase: prvaKlasa i drugaKlasa
+       Ukoliko se neki css stil ponavlja uzima se poslednja vrednost.
+       Npr. da u klasi prvaKlasa imamo color:red, a u drugaKlasa color:blue, 
+       primenice se color:blue.  
+       Ukoliko imamo vise razlicitih stilova, svi ce se iskombinovati.-->
+      <li class="prvaKlasa">List item 2</li>
+      <!-- Ima samo klasu prvaKlasa -->
+      <li id="prviId" class="drugaKlasa">List item 3</li>
+      <!-- Ima ID "prviId" i klasu "drugaKlasa" 
+       ID ima prednost nad klasom -->
+      <li>List item 4</li>
+      <li>List item 5</li>
+    </ul>
+  </body>
+</html>
