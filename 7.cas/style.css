@@ -1,0 +1,33 @@
+h1 {
+  background-color: antiquewhite;
+}
+
+h1:hover {
+  background-color: aqua;
+}
+/* :hover je pseudoklasa koja se primenjuje kada predjemo misem preko elementa*/
+
+/* Mozemo koristiti pseudoklase i sa ID i klasama */
+#poglavlje_1:hover {
+  background-color: green;
+}
+#poglavlje_2:hover {
+  background-color: red;
+}
+
+input:focus {
+  background-color: aqua;
+}
+/* :focus je pseudoklasa koja se primenjuje kada korisnik klikne na input polje  */
+
+p:first-child {
+  background-color: pink;
+}
+/* :first-child bira prvi paragraf unutar parent i menja mu stil  */
+
+.container {
+  background-color: aqua;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
