@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* * znaci da ce se ovaj stil primeniti na sve elemente, margin i padding postavljamo na 0
+a box-sizing: border-box znaci da se i margin i padding ukljucuju u width */
+
+/* FLEXBOX */
+div {
+  background-color: antiquewhite;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+/* display: flex znaci da ce se elementi u divu postaviti u red
+
+FLEX-DIRECTION
+
+flex-direction odredjuje smer u kome ce se elementi postaviti
+flex-direction: row znaci da ce se elementi postaviti jedan pored drugog
+flex-direction: row-reverse znaci da ce se elementi postaviti jedan pored drugog, ali u obrnutom redosledu
+tj. sada se kao pocetak gleda desna strana
+flex-direction: column znaci da ce se elementi postaviti jedan ispod drugog
+flex-direction: column-reverse znaci da ce se elementi postaviti jedan ispod drugog, ali u obrnutom redosledu 
+
+JUSTIFY-CONTENT
+
+justify-content pomera elemente po x-osi (horizontalno) kad je flex-direction: row ili row-reverse
+justify-content pomera elemente po y-osi (vertikalno) kad je flex-direction: column ili column-reverse
+justify-content: flex-start znaci da ce se elementi postaviti na pocetak reda ili kolone
+justify-content: flex-end znaci da ce se elementi postaviti na kraj reda ili kolone
+justify-content: center znaci da ce se elementi postaviti u sredinu reda ili kolone
+justify-content: space-around znaci da ce se elementi postaviti tako da izmedju njih bude jednak razmak
+justify-content: space-between znaci da ce se elementi postaviti tako da izmedju njih bude jednak razmak, ali nece biti razmaka na krajevima
+justify-content: space-evenly znaci da ce se elementi postaviti tako da izmedju
+njih bude jednak razmak, ukljucujuci i krajeve
+
+ALIGN-ITEMS
+
+align-items pomera elemente po y-osi (vertikalno) kad je flex-direction: row ili row-reverse
+align-items pomera elemente po x-osi (horizontalno) kad je flex-direction: column ili column-reverse
+align-items: flex-start znaci da ce se elementi postaviti na pocetak reda ili kolone
+align-items: flex-end znaci da ce se elementi postaviti na kraj reda ili kolone
+align-items: center znaci da ce se elementi postaviti u sredinu reda ili kolone
+*/
+
+p {
+  background-color: aqua;
+  height: 50px;
+  width: 50px;
+}

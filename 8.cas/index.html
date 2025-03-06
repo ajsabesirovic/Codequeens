@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Ovo se primenjuje na spanove koji su first-child (u paragrafima) */
+      p span:first-child {
+        color: red;
+      }
+
+      /* Ovo se primenjuje na spanove koji su first-child paragrafima */
+      p:first-child span {
+        color: blue;
+      }
+
+      /* Ovo se primenjuje na spanove koji su first-child (u paragrafima koji su takodje first-child) */
+      p:first-child span:first-child {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <a href="">Link<span> link</span> link</a> -->
+    <!-- <p>Lorem <span> ipsum</span> dolor <span>sit</span> amet.</p> -->
+    <!-- <p>Lorem <span> ipsum</span> dolor <span>sit</span> amet.</p>
+    <p>Lorem <span> ipsum</span> dolor <span>sit</span> amet.</p>
+    <p>Lorem <span> ipsum</span> dolor <span>sit</span> amet.</p>
+    <p>Lorem <span> ipsum</span> dolor <span>sit</span> amet.</p> -->
+
+    <!-- <p style="background-color: aqua; display: block; width: 200px">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem,
+      debitis?
+    </p> -->
+
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <p>4</p>
+    </div>
+  </body>
+</html>
