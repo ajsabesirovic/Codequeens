@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.treci {
+  height: 200px;
+  flex-grow: 3;
+}
+
+.container {
+  background-color: rgb(88, 92, 92);
+  padding: 20px;
+  font-size: 30px;
+  display: flex; /* Aktivira Flexbox model za raspored elemenata */
+  justify-content: space-between; /* Raspoređuje elemente sa prostorom između njih */
+  align-items: stretch; /* Povećava visinu child elemenata da popune dostupni prostor, do visine elementa sa najvecom visinom */
+  flex-wrap: wrap; /* Omogućava prelamanje elemenata u novi red ako nema dovoljno prostora, 
+    gde ce sada svaki unutrasnji div imati one dimenzije koje smo mu postavili */
+  height: 700px;
+  align-content: center; /* Centriranje redova u kontejneru kada je WRAP aktivan */
+}
+
+.row {
+  margin: 5px;
+  background-color: aqua;
+  width: 200px; /* Definiše širinu svakog elementa na 200px */
+  height: 200px; /* Postavlja visinu na 200px */
+  display: flex;
+  align-items: center; /* Vertikalno centrira sadržaj */
+  justify-content: center; /* Horizontalno centrira sadržaj */
+  flex-grow: 1; /* Omogućava elementu da se širi kako bi popunio dostupan prostor, 
+    elementi sire se na max prostora koji mogu da zauzmu */
+}
+
+.drugi {
+  height: 400px; /* Postavlja visinu elementa na 400px */
+  flex-grow: 5; /* Dodeljuje veći rast u odnosu na druge elemente, (rast u sirini) */
+}
+
+.peti {
+  /* width: 100px; */ /* Ova linija je zakomentarisana, ali bi postavila širinu na 100px */
+  flex-basis: 100px; /* Postavlja početnu širinu elementa na 100px pre rasta */
+}
+
+.treci {
+  align-self: flex-start; /* Postavio bi ovaj element na početak osi */
+}
+
+/* .treci {
+    flex-grow: 3;
+  }*/
+
+.peti {
+  flex-basis: 300px; /* Postavio bi osnovnu širinu petog elementa na 300px */
+}
+
+.prvi {
+  order: 1; /* Menja redosled elementa u Flexbox rasporedu */
+}
+.drugi {
+  order: 0; /* Ovaj element bi ostao na prvom mestu */
+}
+.treci {
+  order: 2; /* Ovaj bi bio treći u nizu */
+}
+.cetvrti {
+  order: 3;
+}
+.peti {
+  order: 4;
+}
+.sesti {
+  order: 5;
+}
