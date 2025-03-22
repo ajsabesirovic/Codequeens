@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proizvodi</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        padding: 50px 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+        max-width: 1200px;
+      }
+
+      .card {
+        width: 350px;
+        background: #929292;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efekat senke */
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .card h3 {
+        margin: 10px 0;
+      }
+
+      .card p {
+        color: #666;
+      }
+
+      .card .price {
+        font-weight: bold;
+        color: #e44d26;
+        margin-top: 10px;
+      }
+
+      /* Responsive dizajn - prilagođavanje ekrana manjim uređajima */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column; /* Kartice se slažu vertikalno umesto horizontalno */
+        }
+
+        .card {
+          background-color: #af7a6d; /* Menjanje boje kartice za manje ekrane */
+          font-size: small; /* Smanjenje veličine fonta */
+        }
+
+        .price {
+          display: none; /* Sakrivanje cene na malim ekranima */
+          /* Alternativa: visibility: hidden; - zadržava prostor ali skriva sadržaj */
+        }
+      }
+
+      /* Dodatni media query za srednje ekrane (600px - 800px) */
+      @media (max-width: 800px) and (min-width: 600px) {
+        .card {
+          background-color: #4644b7; /* Plava boja kartice */
+          font-size: small;
+        }
+      }
+
+      /* Za ekrane manje od 768px:
+
+          Kartice se slažu vertikalno (umesto u redovima).
+          Pozadina se menja na svetlije braon.
+          Cena se sakriva (display: none).
+          Za ekrane između 600px i 800px:
+          Pozadina kartica postaje plava.
+
+      */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="download.jpeg" alt="Proizvod 1" />
+        <h3>Proizvod 1</h3>
+        <p>Kratak opis proizvoda.</p>
+        <div class="price">$19.99</div>
+      </div>
+      <div class="card">
+        <img src="download.jpeg" alt="Proizvod 2" />
+        <h3>Proizvod 2</h3>
+        <p>Kratak opis proizvoda.</p>
+        <div class="price">$24.99</div>
+      </div>
+      <div class="card">
+        <img src="download.jpeg" alt="Proizvod 3" />
+        <h3>Proizvod 3</h3>
+        <p>Kratak opis proizvoda.</p>
+        <div class="price">$29.99</div>
+      </div>
+      <div class="card">
+        <img src="download.jpeg" alt="Proizvod 4" />
+        <h3>Proizvod 4</h3>
+        <p>Kratak opis proizvoda.</p>
+        <div class="price">$34.99</div>
+      </div>
+      <div class="card">
+        <img src="download.jpeg" alt="Proizvod 5" />
+        <h3>Proizvod 5</h3>
+        <p>Kratak opis proizvoda.</p>
+        <div class="price">$39.99</div>
+      </div>
+      <div class="card">
+        <img src="download.jpeg" alt="Proizvod 6" />
+        <h3>Proizvod 6</h3>
+        <p>Kratak opis proizvoda.</p>
+        <div class="price">$44.99</div>
+      </div>
+    </div>
+  </body>
+</html>
