@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        position: absolute;
+        left: 50px;
+        top: 0px;
+        z-index: 1;
+      }
+      p {
+        position: relative;
+        font-weight: bold;
+        color: red;
+        z-index: 2;
+      }
+      h1 {
+        position: relative;
+        z-index: 2;
+      }
+      /* z-index koje kontroliše pozicioniranje elemenata na Z-osi 
+      (tj. njihovu visinu u odnosu na druge elemente na stranici). 
+      Elementi sa višim z-index vrednostima će biti postavljeni ispred onih sa nižim vrednostima. 
+      z-index funkcioniše samo ako je element pozicioniran (position: relative, absolute, fixed, ili sticky). 
+      Na primer, ako dva elementa preklapaju, element sa višim z-index biće prikazan iznad onog sa nižim. */
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <img src="download.jpeg" />
+    <p>Img z-index -1</p>
+  </body>
+</html>

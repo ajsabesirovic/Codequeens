@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        padding: 100px;
+      }
+      .container {
+        position: relative;
+        background-color: red;
+        padding: 5px;
+      }
+
+      .black-box {
+        background-color: rgb(18, 18, 18);
+        color: white;
+        position: relative;
+        z-index: 1;
+        height: 100px;
+        margin: 30px;
+      }
+
+      .gray-box {
+        text-align: right;
+        position: absolute;
+        z-index: 3;
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 70px;
+        top: 60px;
+      }
+
+      .green-box {
+        position: absolute;
+        text-align: center;
+        z-index: 2;
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Z-index</h1>
+
+    <p>Element s vecim brojem z-index-a je uvek iznad onog sa manjim.</p>
+
+    <div class="container">
+      <div class="black-box">Crna kutija</div>
+      <div class="gray-box">Siva kutija</div>
+      <div class="green-box">Zelena kutija</div>
+    </div>
+  </body>
+</html>
