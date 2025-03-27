@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div p {
+        background-color: aqua;
+      }
+      /* Stilizuje sve <p> unutar <div>, bez obzira na dubinu. */
+      div > p {
+        background-color: aqua;
+      }
+      /* Stilizuje samo <p> koji su direktna deca <div>, npr. ako bi
+        <p> bio unutar <section> on nije direktni potomak <div> */
+      div + p {
+        background-color: aqua;
+      }
+      /* Stilizuje samo prvi <p> nakon <div>. */
+      div ~ p {
+        background-color: aqua;
+      }
+      /* Stilizuje sve <p> koji dolaze posle <div>, 
+        bez obzira da li su odmah nakon njega. */
+    </style>
+  </head>
+  <body>
+    <p>Pre diva</p>
+    <div>
+      <p>1</p>
+      <p>2</p>
+      <p>3</p>
+      <div>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <div>
+          <p>7</p>
+          <p>8</p>
+          <p>9</p>
+        </div>
+      </div>
+    </div>
+    <p>Prvi posle diva</p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+        consectetur?
+      </p>
+    </div>
+    <div>Div</div>
+    <p>Drugi posle diva</p>
+  </body>
+</html>

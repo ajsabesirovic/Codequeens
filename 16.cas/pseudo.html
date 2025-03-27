@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a:link {
+        color: red;
+      }
+      /* neposecen link */
+
+      a:visited {
+        color: green;
+      }
+      /* posecen link */
+
+      a:hover {
+        color: hotpink;
+      }
+
+      a:active {
+        color: blue;
+      }
+      /* kad kliknemo na link, primenjuje se active */
+
+      h1::before {
+        content: "BEFORE";
+      }
+      h1::after {
+        content: "AFTER";
+      }
+      /* before i after se koriste za dodavanje sadrzaja u odredjene delove elementa
+      ili pre content-a <h1> (before) ili posle (after) */
+    </style>
+  </head>
+  <body>
+    <h2>Link na osnovu stanja</h2>
+
+    <p>
+      <b
+        ><a
+          href="https://www.learningtypescript.com/articles/branded-types?ref=dailydev"
+          target="_blank"
+          >Ovo je link</a
+        ></b
+      >
+    </p>
+    <p>
+      a:hover mora doci posle a:link i a:visited u CSS da bi bilo efektivno.
+    </p>
+    <p>a:active mora doci posle a:hover.</p>
+
+    <h1>Hello</h1>
+  </body>
+</html>

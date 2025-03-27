@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #overflowTest {
+        background: #4caf50;
+        color: white;
+        padding: 15px;
+        width: 250px;
+        height: 100px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+      }
+      #overflowTest {
+        background: #4caf50;
+        color: white;
+        padding: 15px;
+        width: 250px;
+        height: 100px;
+        /* overflow: scroll; */
+        overflow-y: hidden;
+        overflow-x: scroll;
+        border: 1px solid #ccc;
+        font-size: larger;
+      }
+      /* overflow određuje kako se sadržaj koji prelazi dimenzije kontejnera prikazuje. Može imati sledeće vrednosti:
+
+          visible – sadržaj izlazi van okvira (podrazumevano).
+          hidden – sakriva sadržaj koji prelazi okvire.
+          scroll – dodaje skrolovanje, čak i ako nije potrebno.
+          auto – dodaje skrolovanje samo ako je potrebno.
+          clip – slično hidden, ali bez mogućnosti pomeranja sadržaja.
+
+        overflow-x i overflow-y kontrolišu ponašanje samo u horizontalnom ili vertikalnom pravcu.
+        overflow-x: scroll – omogućava horizontalno skrolovanje.
+        overflow-y: hidden – sakriva vertikalni višak sadržaja. */
+    </style>
+  </head>
+  <body>
+    <h2>CSS Overflow</h2>
+
+    <p>
+      Overflov kontroliše šta se dešava sa sadržajem koji je prevelik za
+      uklapaju se u oblast.
+    </p>
+
+    <div id="overflowTest">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ullam
+      temporibus consequuntur. Autem, consequatur reprehenderit sapiente maxime
+      sed doloremque ullam facilis et earum placeat quod similique, illo ab eos
+      delectus ex. Quo in ad optio, fugiat sequi sed at error voluptatibus quas
+      velit repellendus aut eum ab laboriosam corporis corrupti veritatis
+      blanditiis consectetur beatae expedita mollitia vero distinctio deserunt.
+      Officia dolor adipisci porro! Reprehenderit illum magni assumenda quas
+      impedit doloribus similique quam quos. Libero excepturi dolor assumenda
+      itaque sit impedit harum neque deserunt aperiam totam recusandae ipsa non,
+      similique sequi praesentium laudantium repellendus blanditiis enim omnis
+      ratione perferendis ut quod.
+    </div>
+  </body>
+</html>
