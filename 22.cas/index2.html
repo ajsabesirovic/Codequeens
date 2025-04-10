@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrapper {
+        padding-top: 30px;
+        height: calc(100vh - 30px);
+        background-color: lightblue;
+        animation: fill 1s ease-in-out forwards;
+      }
+
+      .animated-home__text {
+        text-align: center;
+        animation: fadeIn 1s ease-out;
+      }
+
+      .animated-home__text--title {
+        font-size: 2rem;
+        margin-top: 0;
+      }
+
+      .animated-home__text--sub {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .card__image {
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
+      }
+
+      .card-left,
+      .card-right,
+      .card-center {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        width: 300px;
+      }
+
+      .card-left .card__content,
+      .card-right .card__content,
+      .card-center .card__content {
+        padding: 20px;
+      }
+
+      .card-left {
+        opacity: 0;
+        animation: fadeInFromLeft 1s ease-out 1s forwards;
+      }
+
+      .card-right {
+        opacity: 0;
+        animation: fadeInFromRight 1s ease-out 1s forwards;
+      }
+
+      .card-center {
+        opacity: 0;
+        animation: fadeIn 1s ease-out 1s forwards;
+      }
+
+      @keyframes fadeInFromLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInFromRight {
+        0% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          scale: 0;
+          opacity: 0;
+        }
+        100% {
+          scale: 1;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fill {
+        0% {
+          width: 100vh;
+        }
+
+        100% {
+          width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="animated-home__text">
+        <h1 class="animated-home__text--main">Welcome to the home page</h1>
+        <p class="animated-home__text--sub">
+          This is a simple home page with a cool animation
+        </p>
+      </div>
+      <div class="cards">
+        <div class="cards-left">
+          <div class="card-left">
+            <img
+              src="https://www.w3schools.com/w3css/img_lights.jpg"
+              alt="Image 1"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Card Title 1</h2>
+              <p class="card__description">Description for card 1.</p>
+            </div>
+          </div>
+          <div class="card-left">
+            <img
+              src="https://www.w3schools.com/w3css/img_lights.jpg"
+              alt="Image 2"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Card Title 2</h2>
+              <p class="card__description">Description for card 2.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-center">
+          <div class="card-center">
+            <img
+              src="https://www.w3schools.com/w3css/img_lights.jpg"
+              alt="Image 1"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Card Title 1</h2>
+              <p class="card__description">Description for card 1.</p>
+            </div>
+          </div>
+          <div class="card-center">
+            <img
+              src="https://www.w3schools.com/w3css/img_lights.jpg"
+              alt="Image 2"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Card Title 2</h2>
+              <p class="card__description">Description for card 2.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-right">
+          <div class="card-right">
+            <img
+              src="https://www.w3schools.com/w3css/img_lights.jpg"
+              alt="Image 1"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Card Title 1</h2>
+              <p class="card__description">Description for card 1.</p>
+            </div>
+          </div>
+          <div class="card-right">
+            <img
+              src="https://www.w3schools.com/w3css/img_lights.jpg"
+              alt="Image 2"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h2 class="card__title">Card Title 2</h2>
+              <p class="card__description">Description for card 2.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
