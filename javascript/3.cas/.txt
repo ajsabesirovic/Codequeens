@@ -1,0 +1,103 @@
+1.
+    Napraviti popust od 10% na unetu cenu ako je veća od 5000,
+    i potom ispisati pocetnu cenu 
+    i cenu sa popustom ako je ostvaren. 
+
+2. 
+    Neka korisnik unese broj meseca (1 - 12) i ispisati koji je mesec u pitanju i 
+    koliko ima dana.
+
+3.
+    Korisnik unosi visinu osobe u centimetrima. Ispisati kategoriju visine:
+    Manje od 150 cm: "Niska osoba"
+    150 - 179 cm: "Srednje visoka osoba"
+    180 cm i više: "Visoka osoba"
+
+4.
+    Korisnik unosi broj bodova (0 - 100). Ispisati ocenu na osnovu 
+    sledećih kriterijuma:
+    90 i više: Ocena 5
+    80 - 89: Ocena 4
+    70 - 79: Ocena 3
+    60 - 69: Ocena 2
+    Manje od 60: Ocena 1
+
+5.
+    Korisnik unosi trocifren broj. Ispisati poruku:
+
+    Ako je broj pozitivan: "Pozitivan trocifren broj"
+    Ako je broj negativan: "Negativan trocifren broj"
+    Ako nije trocifren: "Broj nije trocifren"
+    
+6. 
+    Na osnovu unetog broja odrediti da li predstavlja radni dan ili vikend i ispisati odgovarajuću poruku.
+
+7.  
+    Na osnovu unete godine rođenja, izračunati starost osobe i odrediti da li ima pravo da glasa.
+    Ako osoba ima manje od 18 godina, ispisati "Nemate pravo glasa".
+    Ako ima između 18 i 65 godina, ispisati "Imate pravo glasa".
+    Ako ima 65 ili više, ispisati "Imate pravo glasa i možete ostvariti olakšice za starije građane".
+
+8. 
+    Proveriti da li je trougao pravougli na osnovu unetih dužina njegovih stranica.
+    Ako važi Pitagorina teorema, ispisati "Trougao je pravougli".
+    Ako ne važi, ispisati "Trougao nije pravougli".
+    Ako unete stranice ne mogu da čine trougao (ne zadovoljavaju trougaono pravilo), ispisati 
+    "Unete vrednosti ne mogu formirati trougao".
+
+9.
+    Unesi brzinu automobila (km/h). Na osnovu unete brzine, menjač treba da prebaci u odgovarajući stepen prenosa:
+
+    0 - 10 km/h → "Prva brzina"
+    11 - 30 km/h → "Druga brzina"
+    31 - 50 km/h → "Treća brzina"
+    51 - 80 km/h → "Četvrta brzina"
+    81+ km/h → "Peta brzina"
+    Ako korisnik unese negativnu brzinu, ispiši: "Brzina ne može biti negativna!".
+
+10.
+    Unesi iznos u dinarima i valutu u koju želi da ga konvertuje:
+
+    EUR → 1 EUR = 117 RSD
+    USD → 1 USD = 108 RSD
+    CHF → 1 CHF = 123 RSD
+    Program treba da prikaže iznos u odabranoj valuti.
+    Ako korisnik unese nepoznatu valutu, ispiši: "Nepoznata valuta!".
+
+11.
+    Unesi broj. Program treba da prikaže:
+
+    Sam broj ako je paran.
+    Najbliži veći paran broj ako je neparan.
+    Na primer:
+
+    Unos: 6 → "Najbliži paran broj je 6."
+    Unos: 7 → "Najbliži paran broj je 8."
+
+
+12.
+    Unesi broj tačnih odgovora na testu i ukupan broj pitanja.
+    Prikaži procenat tačnih odgovora i odgovarajući komentar:
+
+    0 - 50% → "Morate više vežbati!"
+    51 - 75% → "Dobar rezultat!"
+    76 - 90% → "Odličan rezultat!"
+    91 - 100% → "Perfektno!"
+    Ako korisnik unese vrednosti koje nisu validne, prikaži "Unesite ispravan broj tačnih odgovora i ukupan broj pitanja!".
+
+13.
+    Unesi cenu proizvoda i količinu.
+    Ako ukupna cena prelazi 5000 RSD, korisnik dobija popust od 10%.
+    Prikaži konačnu cenu nakon popusta (ako je primenjen).
+
+14.
+    Unesi broj časova u lokalnom vremenu i željenu vremensku zonu (razliku u satima, može biti pozitivna ili negativna).
+    Prikaži koliko je sati u željenoj vremenskoj zoni.
+
+    Na primer:
+
+    Unos: 14, -3 → "U željenoj vremenskoj zoni je 11h."
+    Unos: 22, +5 → "U željenoj vremenskoj zoni je 3h."
+    Ako korisnik unese nevalidan broj časova (van opsega 0-23), ispiši: "Unesite validan broj časova (0-23)!".
+
+
