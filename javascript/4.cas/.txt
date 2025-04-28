@@ -1,0 +1,56 @@
+---Zadaci za switch---
+
+1. Kalkulator
+    Unesi dva broja i operaciju (+, -, *, /) pa pomoću switch uradi odgovarajuću operaciju i 
+    prikaži rezultat.
+2. Simulacija prodavnice
+    Korisnik bira kategoriju proizvoda ("Hrana", "Elektronika", "Odeća") pomoću switch, 
+    zatim ispisuješ nekoliko proizvoda iz te kategorije.
+3. Ocena u rečima
+    Unesi broj ocene (1-5) i pomoću switch ispiši tekstualni opis 
+    ("Nedovoljan", "Dovoljan", "Dobar", "Vrlo dobar", "Odličan").
+
+
+
+
+---Zadaci za for loop---
+
+1. Tablica množenja
+    Za dati broj (npr. 5), ispiši njegovu tablicu množenja do 10.
+    5 * 1 = 5;
+    5 * 2 = 10;
+
+2. Zbir elemenata 
+Unositi brojeve 5 puta, zatim izračunati njihov zbir koristeći for petlju.
+
+3. Najveći broj
+Pronađi najveći i najmanji broj od 5 unetih brojeva.
+
+4. Proveri da li je broj prost
+Unesi broj i pomoću for petlje proveri da li je prost (prost broj je deljiv samo sa 1 i samim sobom).
+
+5. Faktorijel broja
+Izračunaj faktorijel broja n (npr. 5! = 5 × 4 × 3 × 2 × 1 = 120).
+
+6. Suma parnih brojeva do n
+Unesi broj n i izračunaj zbir svih parnih brojeva do n.
+
+7. Deljivost sa 3 i 5
+Ispiši brojeve od 1 do 50 koji su deljivi sa 3 i/ili 5.
+
+8. Srednja vrednost
+Unesi 5 brojeva i izračunaj njihovu srednju vrednost.
+
+9. Stepene broja 2
+Ispiši prve 10 stepena broja 2 (2¹, 2², 2³, ...).
+
+10. Fibonacijev niz
+Ispiši prvih 10 brojeva Fibonacijevog niza. 1 1 2 3 5 8 13 21 34 55 , 
+(svaki naredni broj je zbir prethodna dva)
+
+11. Savršen broj
+Proveri da li je uneti broj savršen (broj čiji zbir delilaca, osim njega samog, 
+daje isti broj, npr. 6 → 1+2+3=6).
+
+
+
