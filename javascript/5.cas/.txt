@@ -1,0 +1,47 @@
+1. Ispis brojeva od 1 do 10
+    Napiši program koji pomoću while petlje ispisuje brojeve od 1 do 10.
+
+2. Suma unetih brojeva 
+    Korisnik unosi brojeve dok ne unese nulu. 
+    Program na kraju ispisuje zbir svih unetih brojeva (osim nule).
+
+
+----- DOMACI -----
+
+3. Pogodi broj
+    Program bira slučajan broj od 1 do 10 (koristi ovaj izraz ---- Math.floor(Math.random() * 10 + 1) ----), 
+    a korisnik pogađa dok ne pogodi tačan broj.
+
+4. Ispis svih parnih brojeva između 1 i 100 (while)
+    Pomoću while petlje ispiši sve parne brojeve između 1 i 100.
+
+5. Unos lozinke
+    Program traži od korisnika da unese lozinku. Ako lozinka nije "tajna123", 
+    traži ponovni unos. Kada unese tačnu lozinku, ispiši poruku dobrodošlice
+
+6. Provera da li je broj prost
+    Korisnik unosi broj, a program proverava da li je taj broj prost (deljiv samo sa 1 i samim sobom).
+    Koristi while petlju za proveru deljivosti.
+
+7. Kalkulator sa menijem
+    Napravi meni koji korisniku daje sledeće opcije:
+
+        Sabiranje
+        Oduzimanje
+        Množenje
+        Deljenje
+        Izlaz
+
+    Korisnik bira opciju i unosi dva broja, a program ispisuje rezultat. 
+    Meni se ponavlja dok korisnik ne izabere opciju "Izlaz".
+    (switch + while).
+
+8. Provera da li je broj palindrom (npr. 121, 1331)
+    Korisnik unosi broj, a program proverava da li je isti kada se pročita unazad.
+
+9. Brojanje cifara unetog broja
+    Korisnik unosi broj, a program broji koliko cifara ima taj broj.
+
+10. Pogodi lozinku sa ograničenim brojem pokušaja
+    Korisnik ima 3 pokušaja da pogodi lozinku "js123". 
+    Ako pogodi, ispisuje "Dobrodošao!", inače "Pristup odbijen."
