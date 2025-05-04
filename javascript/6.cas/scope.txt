@@ -1,0 +1,74 @@
+// ================================
+// PRIMER 1
+// ================================
+if (true) {
+  var x = 5;
+}
+console.log(x);  Ispisuje: 5
+// var ima function (ili globalni) scope, pa je dostupan i van bloka if.
+
+// ================================
+// PRIMER 2
+// ================================
+
+let a = 1;
+
+if (true) {
+  let b = 2;   // let ima blok scope, važi samo unutar ovog if-a
+  var c = 3;   // var ima function/globalni scope, važi van if-a
+}
+
+console.log(a); // 1 (a je deklarisan globalno)
+console.log(b); // Greška: b is not defined (b ne važi van if-a)
+console.log(c); // 3 (c je var i "procuri" van bloka)
+
+// ================================
+// PRIMER 3
+// ================================
+
+for (var i = 0; i < 3; i++) {} 
+console.log(i); // 3
+// var i "curi" izvan for-petlje jer nema blok scope
+
+for (let j = 0; j < 3; j++) {}
+console.log(j); //  Greška: j is not defined
+// let je blok-scoped, ne postoji van for-petlje
+
+// ================================
+// PRIMER 4 
+// ================================
+let x = 10;
+
+if (true) {
+  let x = 20; // ova promenljiva x važi samo unutar if-a
+  {
+    let x = 30; // nova x unutar unutrašnjeg bloka (zasenjuje spoljašnju x)
+    console.log(x); //  30
+  }
+  console.log(x); //  20 (unutrašnji x iz if-a)
+}
+
+console.log("van if bloka:", x); // "van if bloka: 10" (globalni x)
+
+// ================================
+// PRIMER 5
+// ================================
+if (true) {
+  var x = 10;
+}
+
+if (true) {
+  console.log(x); // 10
+  // var x je definisan globalno (ili funkcijski), važi kroz sve blokove
+}
+
+// ================================
+// PRIMER 6
+// ================================
+let x;
+for (var i = 0; i < 3; i++) {
+  x = i; // x se ažurira u svakoj iteraciji
+}
+
+console.log(i); // 3 (var i je dostupan van petlje)
+console.log(x); // 2 (poslednja vrednost x je bila i = 2 pre nego što i postane 3 i prekine petlju)

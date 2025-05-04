@@ -1,0 +1,11 @@
+1. 
+    Nađi prvi broj između 1 i 50 koji nije deljiv ni sa 2 ni sa 3
+
+
+----- DOMACI -----
+2.
+    Unos brojeva – preskoči 0, prekini ako je broj veći od 100
+3.
+    Ispiši samo neparne brojeve od 1 do 20
+4.
+    Saberi sve brojeve od 1 do 20, ali preskoči one koji su deljivi sa 4
