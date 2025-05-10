@@ -1,0 +1,90 @@
+1. Zadatak: 
+    Napiši funkciju kvadrat(broj) koja vraća kvadrat tog broja.
+    (kvadrat(5) => 25)
+
+2. Zadatak: 
+    Napiši funkciju jeParan(broj) koja vraća true ako je broj paran, 
+    a false ako nije.
+
+3. Zadatak: 
+    Napiši funkciju maksimum(a, b) koja vraća veći od dva broja.
+    Ako su a i b jednaki, vrati string "Brojevi su jednaki".
+
+4. Zadatak: 
+    Napiši funkciju zbirDoN(n) koja računa zbir svih brojeva od 1 do n 
+    (koristi for petlju).
+
+5. Zadatak: 
+    Napiši funkciju stepen(baza, izlozilac) koja vraća rezultat baza 
+    na izlozilac. (koristi for, bez Math.pow ili operatora **)
+    + ukoliko je izlozilac 1, odmah vratite bazu, a ako je 0, vratite 1.
+
+6. Zadatak:  
+    Napiši funkciju brojCifara(n) koja vraća koliko cifara ima broj n.
+    Hint: koristi while (n > 0) i n = Math.floor(n / 10).
+
+7. Zadatak:     
+    Napiši funkciju daLiJeProst(broj) koja vraća true ako je broj prost, 
+    u suprotnom false.
+    Hint: Broj je prost ako je deljiv samo sa 1 i samim sobom.
+
+8. Zadatak: 
+    Napiši funkciju faktorijel(n) koja vraća n! — proizvod svih brojeva od 1 do n.
+    Primer: faktorijel(4) vraća 24.
+    (Koristi for ili while)
+
+9. Zadatak: 
+    Napiši funkciju kalkulator(a, b, operator) koja koristi switch da izvrši sabiranje, 
+    oduzimanje, množenje ili deljenje na osnovu operator vrednosti (+, -, *, /).
+
+10. Zadatak: 
+    Napiši funkciju meni() koja u while petlji prikazuje meni korisniku:
+
+        1 - Kvadrat broja
+        2 - Da li je paran
+        3 - Zbir do N
+        0 - Izlaz
+
+11. Zadatak:
+Napiši funkciju zbirParnih(n) koja računa zbir svih parnih brojeva od 1 do n.
+Primer: zbirParnih(6) vraća 2 + 4 + 6 = 12
+
+12. Zadatak:
+Napiši funkciju zbirNeparnih(n) koja računa zbir svih neparnih brojeva od 1 do n.
+Primer: zbirNeparnih(5) vraća 1 + 3 + 5 = 9
+
+13. Zadatak:
+Napiši funkciju obrniBroj(n) koja vraća broj n sa obrnutim ciframa.
+Hint: koristi ostatak pri deljenju i množenje sa 10
+Primer: obrniBroj(123) vraća 321
+
+14. Zadatak:
+Napiši funkciju sumaCifara(n) koja vraća zbir svih cifara broja.
+Primer: sumaCifara(1234) vraća 1 + 2 + 3 + 4 = 10
+
+15. Zadatak:
+Napiši funkciju proizvodCifara(n) koja vraća proizvod svih cifara broja.
+Primer: proizvodCifara(123) vraća 1 × 2 × 3 = 6
+
+16. Zadatak:
+Napiši funkciju daLiJeSavrsen(broj) koja vraća true ako je broj savršen.
+Savršen broj je jednak zbiru svojih delilaca (bez samog sebe).
+Primer: 6 → 1 + 2 + 3 = 6 → savršen broj
+
+17. Zadatak:
+Napiši funkciju zbirDelilaca(broj) koja vraća zbir svih brojeva manjih od datog broja koji ga deli bez ostatka.
+Primer: zbirDelilaca(8) → 1 + 2 + 4 = 7
+
+18. Zadatak:
+Napiši funkciju daLiJeArmstrong(n) koja proverava da li je broj Armstrongov.
+Armstrongov broj: zbir kubova svih cifara je jednak broju.
+Primer: 153 → 1³ + 5³ + 3³ = 153
+
+19. Zadatak:
+Napiši funkciju najmanjiDelilac(n) koja vraća najmanji prirodan delilac već od 1 (osim 1).
+Primer: najmanjiDelilac(15) vraća 3
+
+20. Zadatak:
+Napiši funkciju zbirKvadrataDoN(n) koja vraća zbir kvadrata svih brojeva od 1 do n.
+Primer: zbirKvadrataDoN(3) → 1² + 2² + 3² = 14
+
