@@ -1,0 +1,26 @@
+----- Built-in funkcije -----
+
+            parseInt
+            parseFloat
+            isNaN
+            isInteger
+            toFixed
+            toPrecision
+
+----- Matematicke Ugradjene funkcije -----
+
+            abs
+
+            floor
+            round
+            ceil
+            trunc
+
+            min 
+            max
+
+            pow 
+            sqrt
+            random
+
+
