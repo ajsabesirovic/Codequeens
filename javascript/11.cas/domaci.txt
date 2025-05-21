@@ -1,0 +1,41 @@
+1.
+
+let food = ["apple", "banana", "bread"];
+let drinks = ["water", "juice"];
+
+Napravi novi niz `menu` koji kombinuje hranu i piće
+Iz niza `menu` napravi string koji izgleda kao: "Menu: apple, banana, bread, water, juice"
+Ispiši koliko stavki ima u meniju i koji je poslednji element (koristi `.at()`)
+
+
+
+2.
+
+let cart = [];
+
+Dodaj redom: "laptop", "mouse", "headphones"
+Ukloni poslednji dodat proizvod i sačuvaj ga u promenljivoj `removed`
+Dodaj "keyboard" i "USB stick" na početak niza
+Ispiši trenutni sadržaj korpe, broj proizvoda i poziciju "mouse"
+
+
+
+3.
+
+let movies = ["Inception", "Titanic", "Matrix", "Avatar"];
+
+Korisnik unosi naziv omiljenog filma (simuliraj sa pomocnom varijablom)
+Proveri da li film postoji u nizu
+Ako ne postoji, dodaj ga na kraj
+
+
+
+4.
+
+let waitingList = ["Ana", "Marko", "Jelena", "Stefan"];
+
+Marko i Ana su odustali — ukloni ih iz liste
+Na početak liste dodaj "Ivana" i "Nikola"
+Proveri da li "Stefan" i dalje čeka, i na kojoj poziciji
+
+
