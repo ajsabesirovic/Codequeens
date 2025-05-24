@@ -22,19 +22,18 @@
 11. Obriši sve duplikate iz niza (ručno, bez Set).
 
 12. Broj ponavljanja određenog broja u nizu.
+    const niz = [1, 2, 3, 2, 4, 2];
+    broj = 2 → rezultat: 3 puta
 
-13. const niz = [1, 2, 3, 2, 4, 2];
-broj = 2 → rezultat: 3 puta
-Zameni mesta prvom i poslednjem elementu.
+13. Zameni mesta prvom i poslednjem elementu.
 
 14. Proveri da li niz sadrži određen broj (bez includes).
 
-15. const reci = ["pas", "kuca", "zmaj", "on"];
-Spoji dva niza u jedan (bez concat).
+15. Spoji dva niza u jedan (bez concat).
 
 16. Sortiraj niz brojeva ručno.
 
 17. Proveri da li je niz palindrom (čita se isto s leva i s desna).
+const niz = [1, 2, 3, 2, 1]; jeste palindrom
 
-18. const niz = [1, 2, 3, 2, 1]; jeste palindrom
-Kreiraj novi niz koji sadrži samo jedinstvene elemente (ručno, bez Set).
+18. Kreiraj novi niz koji sadrži samo jedinstvene elemente (ručno, bez Set).
