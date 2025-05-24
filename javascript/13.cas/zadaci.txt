@@ -1,0 +1,19 @@
+1. 
+    Imaš niz brojeva. Pomnoži svaki broj sa 2.
+    Input: [1, 2, 3] → Output: [2, 4, 6]
+
+2.
+    Imaš niz stringova. Pretvori ih sve u velika slova. .toUpperCase()
+    ['ana', 'marko'] → ['ANA', 'MARKO']
+
+3.
+    Pretvori niz brojeva u niz njihovih kvadrata.
+    [2, 3, 4] → [4, 9, 16]
+
+4.
+    Imaš niz godina. Za svaku izračunaj koliko bi osoba imala 2030.
+    [2000, 1995] → [30, 35]
+
+5.
+    Iz niza imena napravi niz stringova "Pozdrav, [ime]!".
+    ['Mila', 'Nikola'] → ['Pozdrav, Mila!', 'Pozdrav, Nikola!']

@@ -1,0 +1,42 @@
+Odradite zadatke preko map + pomocu for petlje da biste uvezbale
+
+1.
+    Imaš niz reči. Vrati niz njihovih dužina. (koristi length za stringove)
+    ['kuća', 'auto', 'telefon'] → [4, 4, 7]
+
+2.
+    Imaš niz brojeva. napravi niz boolean vrednosti koje govore da li je broj paran.
+    [1, 2, 3] → [false, true, false]
+
+3.
+    Imaš niz ocena (1-5). Pretvori svaku ocenu u "loša", "dobra", "odlična".
+    [2, 4, 5] → ['loša', 'dobra', 'odlična']
+
+4.
+    Imaš niz cena u evrima. Pretvori ih u dinare (kurs 1€ = 117).
+    [10, 25] → [1170, 2925]
+
+5.
+    Imaš niz godina. Izdvoji samo punoletne.
+    [15, 18, 21] → [18, 21]
+
+6.
+    Imaš niz brojeva. Zadrži samo one deljive sa 3.
+    [3, 5, 6, 8, 9] → [3, 6, 9]
+
+7.
+    Imaš niz reči. Izdvoji one koje imaju tačno 4 slova.
+    ['kuca', 'pas', 'auto'] → ['kuca', 'auto']
+
+8.
+    Imaš niz godina. Pronađi prvu punoletnu osobu.
+    [15, 16, 18, 20] → 18
+
+9.
+    Pronađi prvi broj deljiv sa 7.
+    [5, 13, 14, 21] → 14
+
+10.
+    Imaš niz brojeva. Pronađi prvi negativan broj.
+    [5, -3, 2] → -3
+
