@@ -15,28 +15,13 @@ Odradite zadatke preko map + pomocu for petlje da biste uvezbale
 4.
     Imaš niz cena u evrima. Pretvori ih u dinare (kurs 1€ = 117).
     [10, 25] → [1170, 2925]
-
 5.
-    Imaš niz godina. Izdvoji samo punoletne.
-    [15, 18, 21] → [18, 21]
-
+    Imaš niz decimalnih brojeva. Zaokruži ih na najbliži ceo broj.
+    [1.2, 2.7, 3.5] → [1, 3, 4]
 6.
-    Imaš niz brojeva. Zadrži samo one deljive sa 3.
-    [3, 5, 6, 8, 9] → [3, 6, 9]
-
+    Imaš niz brojeva. Pretvori ih u negativne brojeve (ako već nisu).
+    [3, -5, 7] → [-3, -5, -7]
 7.
-    Imaš niz reči. Izdvoji one koje imaju tačno 4 slova.
-    ['kuca', 'pas', 'auto'] → ['kuca', 'auto']
-
-8.
-    Imaš niz godina. Pronađi prvu punoletnu osobu.
-    [15, 16, 18, 20] → 18
-
-9.
-    Pronađi prvi broj deljiv sa 7.
-    [5, 13, 14, 21] → 14
-
-10.
-    Imaš niz brojeva. Pronađi prvi negativan broj.
-    [5, -3, 2] → -3
+    Imaš niz stringova. Dodaj znak uzvika (!) na kraj svakog.
+    ['Bravo', 'Super', 'Odlično'] → ['Bravo!', 'Super!', 'Odlično!']
 
