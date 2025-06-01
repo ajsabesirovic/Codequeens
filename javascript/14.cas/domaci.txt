@@ -1,0 +1,36 @@
+
+1.
+    Imaš niz godina. Izdvoji samo punoletne.
+
+2.
+    Imaš niz godina. Pronađi prvu punoletnu osobu.
+
+3.
+    Imaš niz reči. Izdvoji one koje imaju tačno 4 slova.
+
+4.
+    Imaš niz brojeva. Zadrži samo one deljive sa 3.
+
+5.
+    Sacuvaj prvi broj deljiv sa 7.
+
+6.
+    Imaš niz brojeva. Pronađi prvi negativan broj.
+
+7.
+    Pronađi prvi broj koji je deljiv i sa 3 i sa 5.
+
+8.
+    Pronađi prvi broj koji je kvadrat nekog celog broja (npr. 4, 9, 16...). koristite built in f-je
+
+9.
+    Pronađi prvi prost broj u nizu.
+
+10.
+    Pronađi prvi broj koji nije deljiv ni sa jednim brojem od 2 do 10.
+
+Zadatak je da iz niza celih brojeva izdvojiš sve parne brojeve, 
+zatim izračunaš njihove kvadrate i na kraju pronađeš prvi broj u tom nizu kvadrata koji je veći od 100.
+
+Prvo filtrirati pozitivne brojeve, zatim proveriti da li su prosti (možeš koristiti pomoćnu funkciju),
+ kvadrirati ih, i na kraju filtrirati one čiji kvadrat nije deljiv sa 3.

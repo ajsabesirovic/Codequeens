@@ -1,0 +1,42 @@
+
+
+
+------- FILTER -------
+1. 
+    Izdvoji parne brojeve iz niza.
+    [1, 2, 3, 4] → [2, 4]
+
+2.
+    Izdvoji reči koje su kraće od 5 slova.
+    ['pas', 'automobil', 'kuća'] → ['pas', 'kuća']
+
+3.
+    Filtriraj brojeve koji su između 10 i 100 
+
+4.
+    Izdvoji ocene koje su pozitivne (veće od 5).
+    [4, 6, 9, 5] → [6, 9]
+
+
+
+------- FIND ------- 
+
+1.
+    Pronađi prvi broj veći od 10.
+    [3, 7, 12, 9] → 12
+
+2.
+    Pronađi prvi paran broj.
+    [1, 3, 7, 8, 10] → 8
+
+3.
+    Pronađi prvu reč koja ima više od 6 slova.
+    ['kuća', 'automobil'] → 'automobil'
+
+4.
+    Pronađi prvi negativan broj.
+
+5.
+    Data je lista brojeva. Prvo filtriraj sve parne brojeve, 
+    pa među njima pronađi prvi koji je manji od 10.
+
