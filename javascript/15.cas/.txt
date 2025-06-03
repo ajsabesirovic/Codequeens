@@ -1,0 +1,42 @@
+Odradite zadatke koje niste stigle na casu
+
+
+Da li postoji bar jedan paran broj?
+
+Da li postoji broj veći od 100?
+
+Da li postoji negativan broj?
+
+Da li postoji broj deljiv sa 7?
+
+Da li postoji broj manji od 0 i paran?
+
+Da li postoji broj koji je tačno 10?
+
+Da li postoji broj između 50 i 60?
+
+Da li postoji broj koji kada se podeli sa 4 daje ostatak 1?
+
+Da li postoji broj koji je jednak broju n (npr. n = 25)?
+
+Da li postoji broj koji je kvadrat celog broja?
+
+Da li su svi brojevi pozitivni?
+
+Da li su svi brojevi veći od 10?
+
+Da li su svi brojevi parni?
+
+Da li su svi brojevi manji od 100?
+
+Da li su svi brojevi deljivi sa 5?
+
+Da li su svi brojevi različiti od nule?
+
+Da li su svi brojevi veći od prvog broja u nizu?
+
+Da li su svi brojevi između -10 i 10?
+
+Da li su svi brojevi prirodni brojevi (ceo broj veći od 0)?
+
+Da li su svi brojevi kvadrati celih brojeva?
