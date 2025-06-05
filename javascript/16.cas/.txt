@@ -1,0 +1,21 @@
+Ispiši svaki broj u nizu.
+
+Ispiši kvadrat svakog broja.
+
+Ispiši poruku: "Broj X je paran/neparan".
+
+Saberi sve brojeve i ispiši zbir (koristi promenljivu van forEach).
+
+Prebroj koliko brojeva u nizu je veće od 10.
+
+Ispiši redni broj (indeks) i vrednost svakog broja.
+
+Ispiši dvostruku vrednost samo parnih brojeva.
+
+Ispiši sve brojeve koje kada podeliš sa 5 daju ostatak 2.
+
+Nađi najveći broj u nizu koristeći forEach.
+
+Napravi zbir svih pozitivnih brojeva
+
+

@@ -1,0 +1,21 @@
+Truthy vs falsy values
+
+false	    logička vrednost false
+0	        broj nula
+-0	        negativna nula
+0n	        BigInt nula
+""	        prazan string
+null	    prazna vrednost
+undefined	neodređena vrednost
+NaN         "Not a Number"
+
+"tekst"	 " "    bilo koji neprazan string
+42	        bilo koji broj osim 0
+-5	        negativan broj
+[]	        prazan niz
+{}	        prazan objekat
+function	funkcija
+Infinity	beskonačnost
+
+
+
