@@ -1,0 +1,21 @@
+-------------------- REDUCE --------------------
+
+Izračunaj zbir svih brojeva.
+
+Izračunaj proizvod svih brojeva.
+
+Izračunaj zbir svih parnih brojeva.
+
+Izračunaj zbir kvadrata svih brojeva.
+
+Nađi najveći broj u nizu.
+
+Nađi najmanji broj u nizu.
+
+Izračunaj prosečnu vrednost niza.
+
+Prebroj koliko brojeva je manje od 0.
+
+Saberi samo brojeve koji su deljivi sa 3.
+
+Kombinuj brojeve tako da praviš broj (npr. [1, 2, 3] → 123).
