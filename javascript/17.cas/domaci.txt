@@ -19,3 +19,28 @@ Prebroj koliko brojeva je manje od 0.
 Saberi samo brojeve koji su deljivi sa 3.
 
 Kombinuj brojeve tako da praviš broj (npr. [1, 2, 3] → 123).
+
+-------------------- TERNARNI OPERATOR --------------------
+
+Napiši program koji koristi ternarni operator da proveri da li je dati broj paran ili neparan.
+
+Koristi ternarni operator da pronađeš veći od dva uneta broja.
+
+Koristi ternarne operatore da proveriš da li je broj pozitivan, negativan ili nula (ovde ce vam trebati ugnjezdeni ternarni operator)
+
+-------------------- NIZOVI --------------------
+
+Napiši funkciju koja vraća novi niz sa svim elementima uvećanim za 1, bez modifikovanja originalnog niza.
+
+Malo za mozganje: 
+
+let a = [1, 2, 3];
+let b = a;
+let c = [1, 2, 3];
+
+Koji ce biti rezultat za a == b, a koji za b == c?
+
+
+Ako deklarisem niz sa const, a onda pokusam da ubacim novi el u niz, to predstavlja menjanje niza. Ako znamo da js ne
+dozvoljava menjanje varijable deklarisano sa const, zbog cega ovde ne dobijamo gresku?
+
