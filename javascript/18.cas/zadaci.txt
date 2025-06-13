@@ -1,0 +1,19 @@
+Napiši funkciju koja 
+
+    vraća koliko jedno ime ima slova
+
+    pretvori string u velika slova
+
+    iz stringa imena i prezimena napravi inicijale dakle iz 'Ajsa Besirovic' => 'A.B.'
+
+    pretvori rečenicu u niz reči, primer '     Hello world    ' => ['Hello','world']
+
+    filtriraj reči kraće od 5 slova iz stringa
+
+    broji koliko puta se neko slovo pojavljuje u stringu
+
+    proverava da li je string palindrom (reverse)
+
+    formatira email adresu korisnika, prima ime i prezime vraca 'ajsabesirovic@gmail.com'
+
+    iz stringa pronađe sve reči koje počinju velikim slovom i vrati ih kao niz

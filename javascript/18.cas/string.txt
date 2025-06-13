@@ -1,0 +1,14 @@
+Izdvoji stringove koji sadrže slovo 'a'.
+['mama', 'tata', 'brat', 'oko'] → ['mama', 'tata', 'brat']
+
+Niz reči. Izdvoji samo one koje počinju velikim slovom.
+['Ana', 'marko', 'Luka'] → ['Ana', 'Luka']
+
+Pronađi prvu reč koja sadrži slovo "z".
+['sunce', 'zebra', 'mačka'] → 'zebra'
+
+Niz stringova. Pronađi prvi string koji je palindrom.
+['oko', 'ana', 'kuća'] → 'oko'
+
+Imaš niz reči. Vrati niz brojeva koji predstavljaju broj samoglasnika u svakoj reči.
+['auto', 'kuća', 'program'] → [3, 2, 2]
