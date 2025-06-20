@@ -1,0 +1,75 @@
+1.
+ Napravi objekat `auto` koji ima sledeća svojstva: marka, model, godina, boje (niz boja).
+ - Dodaj svojstvo `vlasnik`
+ - Izmeni godinu
+ - Izbriši boje
+ - Ispisi samo marku i model
+
+2.
+const korisnici = [
+  { ime: "Ajsa", godine: 20 },
+  { ime: "Hana", godine: 20 },
+  ... dodajte jos korisnika
+];
+
+ Napravi novi niz imena svih korisnika (`map`).
+ Filtriraj korisnike starije od 18 godina (`filter`).
+ Ispiši korisnike čije ime ima 4 ili više slova 
+
+3.
+const proizvodi = [
+  { naziv: "Majica", cena: 1200 },
+  { naziv: "Patike", cena: 6000 },
+  { naziv: "Kačket", cena: 800 },
+  { naziv: "Trenerka", cena: 3000 },
+];
+
+ Filtriraj proizvode čija je cena manja od 3000
+ Iz rezultata napravi niz samo njihovih naziva (koristi `map`)
+
+4.
+let studenti = [
+  { ime: "Ajla", prosek: 9.1 },
+  { ime: "Mitar", prosek: 8.3 },
+];
+
+ Dodaj još jednog studenta u niz
+ Izbriši studenta sa prosekom manjim od 9
+ Ispisi imena svih preostalih studenata
+
+5.
+const racuni = [
+  { naziv: "Struja", iznos: 3200 },
+  { naziv: "Voda", iznos: 800 },
+  { naziv: "Internet", iznos: 1500 },
+];
+
+ Izračunaj ukupan iznos svih računa pomoću reduce
+
+6.
+const korisnici = [
+  { ime: "Ajla", aktivan: false },
+  { ime: "Hana", aktivan: false },
+  { ime: "Ena", aktivan: true },
+];
+
+ Napravi funkciju koja vraca prvog korisnika koji je aktivan
+
+7.
+const filmovi = [
+  { naslov: "Matrix", godina: 1999 },
+  { naslov: "Inception", godina: 2010 },
+  { naslov: "The Batman", godina: 2022 },
+];
+
+ Dodaj svakom filmu novo svojstvo `star` koje je true ako je film stariji od 2015, false ako nije
+
+8.
+const proizvodi = [
+  { naziv: "Monitor", cena: 15000 },
+  { naziv: "Tastatura", cena: 3000 },
+  { naziv: "Miš", cena: 2000 },
+];
+
+Napravi fju koja vraca proizvod sa najvećom cenom
+
