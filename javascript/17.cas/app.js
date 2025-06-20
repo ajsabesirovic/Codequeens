@@ -43,11 +43,11 @@ broj > 5 ? console.log("br veci") : console.log("br manji");
 // - Ovo je korisno za kratke logičke grananja koje vraćaju vrednosti ili izvršavaju kratak kod.
 
 // Primer: Korišćenje reduce metode
-const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const niz = [100, 2, 5, 300, 1];
 
 const rezultat = niz.reduce((akumulator, trElement) => {
   return akumulator + trElement;
-});
+}, "opcioni ");
 
 console.log(rezultat);
 
@@ -57,5 +57,18 @@ console.log(rezultat);
 //   1. akumulator (vrednost koja se prenosi dalje)
 //   2. trElement (trenutni element niza u iteraciji)
 // - Na svakoj iteraciji: akumulator = prethodni zbir, trElement = novi broj iz niza.
-// - Ako se ne da početna vrednost (drugi argument reduce), koristi se prvi element kao početni akumulator, a iteracija kreće od drugog elementa.
+// - Ako se ne da početna vrednost (drugi argument reduce "opcioni"), koristi se prvi element kao početni akumulator, a iteracija kreće od drugog elementa.
 // - Ovde se sabiraju svi brojevi iz niza i vraća njihov zbir.
+
+const niz = [100, 2, 5, 300, 1];
+let najveci = niz.reduce((acc, el) => {
+  return el > acc ? el : acc;
+});
+
+let brojElManjihOd0 = niz.reduce(
+  (count, curr) => (curr < 0 ? count++ : count),
+  0
+);
+
+let spojeno = niz.reduce((ak, brojj) => ak * 10 + brojj); // kao broj
+let sp = niz.reduce((ak, trEl) => ak + trEl, ""); // kao string
