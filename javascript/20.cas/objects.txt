@@ -1,0 +1,13 @@
+Ispiši sve ključeve nekog objekta.
+
+Saberi samo numeričke vrednosti.
+
+Prikaži "ključ: vrednost" koristeci forEach i entries
+
+Napravi novi objekat koji kombinuje oba objekta na dva nacina
+
+Napravi novi objekat gde su ključevi i vrednosti zamenjeni
+
+Napravi funkciju koja proverava da li objekat ima svojstvo koje prosledite kao argument, i vratite 'ima' ili 'nema'
+
+Napravi novi objekat koji sadrži samo "truthy" polja 
