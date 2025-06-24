@@ -1,13 +1,21 @@
 Ispiši sve ključeve nekog objekta.
+(Koristi Object.keys(objekat), a zatim kroz forEach prodji kroz niz i ispisi)
 
 Saberi samo numeričke vrednosti.
+(Prođi kroz sve ključeve objekta sa forEach, i proveri da li je vrednost broj pomoću typeof. Ako jeste, dodaj ga na zbir. typeof var1 vam vraca tip varijable var1 kao number,string...)
 
 Prikaži "ključ: vrednost" koristeci forEach i entries
+(Object.entries(objekat) ti daje niz nizova: [ključ, vrednost]. Koristi obicnu for petlju da prikažeš svaki par u formatu koji sam stavila.)
 
 Napravi novi objekat koji kombinuje oba objekta na dva nacina
+(Koristi spread operator (...) ili Object.assign da spojiš dva objekta u novi. Ako imaju isto ime ključa, poslednji prepisuje vrednost.)
 
 Napravi novi objekat gde su ključevi i vrednosti zamenjeni
+(Prođi kroz Object.entries(objekat) sa for petljom, i za svaki par postavi: novaVrednost kao ključ, a stariKljuc kao vrednost.
+dakle ako je u starom objektu bilo ime:"ajsa", sad nek bude ajsa:"ime")
 
 Napravi funkciju koja proverava da li objekat ima svojstvo koje prosledite kao argument, i vratite 'ima' ili 'nema'
+(Koristi metodu hasOwnProperty("naziv") da proveriš da li objekat sadrži neki ključ, ako sadrzi vrati 'ima' ako ne 'nema')
 
 Napravi novi objekat koji sadrži samo "truthy" polja 
+(Prođi kroz sve parove (Object.entries) i zadrži samo one gde je vrednost truthy (nije false, 0, itd))
