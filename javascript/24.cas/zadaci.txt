@@ -1,0 +1,39 @@
+
+9. Koristi getAttribute da pročitaš href vrednost linka.
+
+Neka HTML ima <a href="https://example.com">Link</a> – prikaži href u konzoli.
+
+
+10. Koristi getElementsByName da pronađeš sve <input> elemente sa istim name atributom.
+
+Neka forma ima više <input> polja sa istim name.
+
+
+11. Koristi setAttribute da postaviš src za <img>.
+
+Kreiraj <img> bez src u HTML-u, a u JS postavi src.
+
+
+12. Koristi removeAttribute da ukloniš disabled sa <button>.
+
+Neka dugme bude onemogućeno, a klik na drugo dugme ga omogućava.
+
+
+13. Prikaži kako se koristi dataset i data-* atribut.
+
+Kreiraj <div> sa data-info="Test info" i pročitaj ga pomoću dataset.
+
+
+14. Koristi classList.add da dodaš klasu elementu.
+
+Dodaj klasu highlight na neki paragraf.
+
+
+15. Koristi classList.remove da ukloniš klasu sa elementa.
+
+Ukloni klasu active sa dugmeta kad se klikne.
+
+
+16. Koristi classList.toggle da prebacuješ klasu pri kliku.
+
+Na klik dugmeta dodaj/ukloni klasu dark-mode na body.

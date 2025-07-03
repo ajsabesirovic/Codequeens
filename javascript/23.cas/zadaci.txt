@@ -1,0 +1,61 @@
+
+
+2. Koristi append da dodaš 
+novi paragraf u postojeći div.
+
+Kreiraj div u HTML-u, 
+a u JavaScript-u napravi novi <p> element
+ i dodaj ga pomoću append.
+
+
+3. Koristi appendChild da dodaš <li> u postojeću <ul>.
+Neka lista ima već bar jedan <li>, 
+a ti dodaj još jedan pomoću appendChild.
+
+
+4. Koristi createElement da napraviš novi <button> i 
+prikaži ga na stranici.
+Postavi mu neki tekst i dodaj ga u telo dokumenta.
+
+<div> span
+5. Istraži razliku između innerText i textContent.
+Kreiraj element i isprobaj oba svojstva na istom elementu.
+Neka studenti uporede rezultate kad postoji display: none.
+
+
+6. Koristi innerHTML da dodaš HTML kod u neki div.
+
+Neka div na početku bude prazan, a JavaScript neka ubaci <h2> i neki tekst.
+
+
+7. Koristi remove da obrišeš neki element sa stranice.
+
+Neka dugme briše <p> kada se klikne.
+
+
+8. Koristi removeChild da obrišeš <li> iz <ul>.
+
+Neka lista ima više stavki, obriši drugu stavku.
+
+9. Kreiraj novi <div> pomoću createElement i dodaj ga u body pomoću appendChild.
+Napiši neki tekst unutar tog <div> pomoću innerText.
+
+10. Napravi dva <p> elementa i dodaj oba u jedan <div> pomoću append.
+Neka <div> već postoji u HTML-u.
+
+11. Koristi textContent da dodaš tekst u <h1> element koji već postoji u HTML-u.
+
+12. Napravi <button> koji kada se klikne doda novi <li> u <ul>.
+
+13. Napravi <button> koji kada se klikne obriše <div> pomoću remove.
+
+14. Kreiraj prazan <div> i pomoću innerHTML ubaci dva <p> unutar njega odjednom.
+
+15. Kreiraj prazan <ul>, pa pomoću petlje (for) dodaj 5 <li> stavki pomoću appendChild.
+
+16. Napravi <button> koji kada se klikne uklanja poslednji <li> iz <ul> pomoću removeChild.
+
+17. Kreiraj <button> koji dodaje tekst "Kliknuto!" na kraj <div> pomoću append.
+
+18. Pomoću createElement napravi <span>, dodaj mu tekst pomoću textContent i ubaci ga u <p>.
+

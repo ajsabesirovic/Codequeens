@@ -1,0 +1,96 @@
+6.
+caption
+colgroup (span)
+col
+colspan
+rowspan
+cell spacing tj. border-spacing
+nth-child(even)
+selektovanje i stilizacija elemenata
+class
+id
+
+7.
+bookmark
+hover
+focus
+margin-auto
+containers:
+span
+div
+
+8.
+first-of-type
+p i:first-child{
+  color: red;
+} 
+p:first-child i {
+  color: blue;
+} 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  // u width i height uključuje i padding i margin
+}
+display
+ 
+
+9.
+align-self
+order
+flex-grow : 1; maximum
+flex-grow: 3; 3x veci od ostalih
+flex-basis - width
+flex-shrink - 0
+flex-wrap
+align-content
+
+10.
+static
+relative - u odnosu na sebe
+absolute - u odnosu na roditelja (relative, absolute, sticky, fixed)
+fixed - u odnosu na viewport
+sticky - na skrol
+
+
+16.
+Potomak ( - space kombinator)
+Selektuje sve unutrašnje (gnjezdene) elemente unutar nekog drugog elementa, bez obzira na njihov nivo ugnježđavanja.
+Stilizuje sve <p> unutar <div>, bez obzira na dubinu.
+
+Direktni potomak (> - greater than kombinator)
+Selektuje samo direktne potomke, a ne dublje ugnježdene elemente.
+Stilizuje samo <p> koji su direktna deca <div>.
+
+Susedni sibling (+ - adjacent sibling kombinator)
+Selektuje prvi sledeći sibling element koji dolazi odmah nakon nekog elementa.
+Stilizuje samo prvi <p> nakon <h1>.
+
+Generalni sibling (~ - general sibling kombinator)
+Selektuje sve sledeće sibling elemente, a ne samo prvi.
+Stilizuje sve <p> koji dolaze posle <h1>, bez obzira da li su odmah nakon njega.
+
+
+21.
+transition
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+
+from to
+animation-name
+animation-duration
+animation-delay Negative values, the animation will start as if it had already been playing for N seconds.
+
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+
+
+5.
+Ispis brojeva od 1 do 5

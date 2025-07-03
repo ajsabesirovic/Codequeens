@@ -5,6 +5,16 @@
  - Izbriši boje
  - Ispisi samo marku i model
 
+const auto = {
+  marka:"BMW",
+  model:"X5",
+  godina: "2023",
+  boje: ["crna","crvena","plava"]
+};
+
+auto.vlasnik = "Ajsa";
+auto.godina = 2024;
+console.log(auto.marka , auto.model)
 2.
 const korisnici = [
   { ime: "Ajsa", godine: 20 },

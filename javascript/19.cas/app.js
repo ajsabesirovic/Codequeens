@@ -61,3 +61,23 @@ console.log(osoba.adresa.ulica);
 for (let i = 0; i < osoba.hobiji.length; i++) {
   console.log(osoba.hobiji[i]); // Ispisuje svaki hobi posebno
 }
+
+const korisnici = [
+  { ime: "Ajsa", godine: 20 },
+  { ime: "Hana", godine: 14 },
+  { ime: "Adem", godine: 15 },
+  { ime: "Orhan", godine: 15 },
+  { ime: "Ibrahim", godine: 13 },
+];
+
+//  Napravi novi niz imena svih korisnika (`map`).
+//  Filtriraj korisnike starije od 18 godina (`filter`).
+//  Ispiši korisnike čije ime ima 4 ili više slova
+
+const imena = korisnici.map((korisnik) => korisnik.ime);
+const stariji = korisnici.filter((korisnik) => korisnik > 18);
+korisnici.forEach((korisnik) => {
+  if (korisnik.ime.length >= 4) {
+    console.log(korisnik);
+  }
+});
