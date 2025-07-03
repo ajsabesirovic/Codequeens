@@ -1,39 +1,38 @@
-
-9. Koristi getAttribute da pročitaš href vrednost linka.
-
-Neka HTML ima <a href="https://example.com">Link</a> – prikaži href u konzoli.
+1. Neka HTML ima <a href="https://example.com">Link</a> – prikaži href u konzoli.
 
 
-10. Koristi getElementsByName da pronađeš sve <input> elemente sa istim name atributom.
-
-Neka forma ima više <input> polja sa istim name.
+2. Kreiraj <img> bez src u HTML-u, a u JS postavi src.
 
 
-11. Koristi setAttribute da postaviš src za <img>.
-
-Kreiraj <img> bez src u HTML-u, a u JS postavi src.
+3. Neka dugme bude disabled, a klik na drugo dugme ga omogućava.
 
 
-12. Koristi removeAttribute da ukloniš disabled sa <button>.
-
-Neka dugme bude onemogućeno, a klik na drugo dugme ga omogućava.
+4. Kreiraj <div> sa data-info="Test info" i pročitaj ga pomoću dataset.
 
 
-13. Prikaži kako se koristi dataset i data-* atribut.
-
-Kreiraj <div> sa data-info="Test info" i pročitaj ga pomoću dataset.
+5. Dodaj klasu highlight na neki paragraf.
 
 
-14. Koristi classList.add da dodaš klasu elementu.
-
-Dodaj klasu highlight na neki paragraf.
+6. Ukloni klasu active sa dugmeta kad se klikne.
 
 
-15. Koristi classList.remove da ukloniš klasu sa elementa.
-
-Ukloni klasu active sa dugmeta kad se klikne.
+7. Na klik dugmeta dodaj/ukloni klasu dark-mode na body.
 
 
-16. Koristi classList.toggle da prebacuješ klasu pri kliku.
+8. Napravi <button>. Kada se klikne, neka promeni tekst u "Kliknuto!"
 
-Na klik dugmeta dodaj/ukloni klasu dark-mode na body.
+
+9. Napravite <div> i <button>. Klikom na dugme menjaš boju <div> (ako je bela ➜ crvena ➜ bela).
+
+
+10. Kada pređeš mišem preko <div>, neka mu se poveća širina. Kada miš ode, vrati se na staro.
+
+
+11. Na pritisak tastera "a" dodaj novi <p> sa tekstom "Pritisnuto A" u <body>.
+
+
+12. Dugme koje broji koliko puta je kliknuto i ispisuje taj broj u <p>.
+
+
+13. Klik na dugme ➜ dodaje novi list item sa tekstom "List item i odgovarajuci broj po redu" ispod.
+

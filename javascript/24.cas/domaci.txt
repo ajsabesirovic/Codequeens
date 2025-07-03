@@ -98,6 +98,6 @@ Za data-id koristite dataset (npr. element.dataset.id).
 Brojač pročitanih knjiga ažurirajte svaki put kada se status promeni.
 Pazite da sve funkcionalnosti rade čak i kada nema knjiga na listi.
 
-Bonus:
 Dodaj dugme "Sakrij pročitane" koje toggle-uje klasu hidden na svim knjigama koje imaju klasu read.
+
 
