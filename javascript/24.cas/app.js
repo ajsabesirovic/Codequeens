@@ -73,3 +73,5 @@ const p = document.getElementById("klik");
 btn.addEventListener("click", () => {
   p.textContent = "Kliknuto!";
 });
+
+// addEventListener jeste metoda koja slusa za odredjeni event(prvi argument) i kad se on desi izvrsi funkciju koju smo poslali kao callback(drugi argument)
