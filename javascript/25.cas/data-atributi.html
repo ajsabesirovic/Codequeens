@@ -1,0 +1,28 @@
+<!-- data- atributi su custom (korisnički) atributi 
+koje možeš da dodaš na bilo koji HTML element
+Koriste se da čuvaju dodatne podatke koje kasnije možeš da pročitaš 
+ili menjaš pomoću js-a -->
+<div data-info="Test info" data-user-id="123"></div>
+<!-- U ovom primeru, <div> ima dva data- atributa:
+        data-info → vrednost "Test info"
+        data-user-id → vrednost "123"-->
+
+<!-- Svaki data- atribut MORA da počne sa data-
+
+Nakon data- dolazi ime koje sami biramo: data-name, data-user-id, data-role...
+
+Dozvoljeno je korišćenje crtica (-) unutar imena.-->
+
+<!-- Kada element ima data- atribute, 
+js automatski napravi dataset objekat za taj element. -->
+
+<script>
+  const div = document.getElementById("myDiv");
+
+  // dataset je poseban objekat koji sadrži sve data- atribute, kao propertyje
+  // ali bez data u njihovim nazivima
+  console.log(div.dataset.userId);
+  console.log(div.dataset.role);
+  //   data-user-id u dataset postaje userId
+  // crtica - se pretvara u veliko slovo .
+</script>

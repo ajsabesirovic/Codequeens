@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Dodaj novi list item</button>
+    <ul>
+      <li>List item 1</li>
+    </ul>
+    <script>
+      const btn = document.querySelector("button");
+      const ul = document.querySelector("ul");
+
+      btn.addEventListener("click", () => {
+        const listItem = document.createElement("li");
+
+        let trenutniBrojItema = ul.getElementsByTagName("li").length + 1;
+
+        listItem.textContent = `List item ${trenutniBrojItema}`;
+        ul.append(listItem);
+      });
+    </script>
+  </body>
+</html>

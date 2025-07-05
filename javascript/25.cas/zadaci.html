@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ZadacI</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+      #hoverDiv {
+        transition: width 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://example.com" id="myLink">Link</a>
+
+    <hr />
+
+    <img id="myImage" alt="My image" />
+
+    <hr />
+
+    <button id="targetBtn" disabled>Dugme koje se omogućava</button>
+    <button id="enableBtn">Omogući prvo dugme</button>
+
+    <hr />
+
+    <div id="infoDiv" data-info="Test info">Div sa data-info</div>
+
+    <hr />
+
+    <p id="myParagraph">Ovaj paragraf će dobiti klasu highlight.</p>
+
+    <hr />
+
+    <button id="btnRemove" class="active">
+      Klikni da ukloniš klasu active
+    </button>
+
+    <hr />
+
+    <button id="toggleBtn">Uključi/Isključi Dark Mode</button>
+
+    <hr />
+
+    <button id="changeTextBtn">Klikni me</button>
+
+    <hr />
+
+    <div
+      id="colorBox"
+      style="
+        width: 100px;
+        height: 100px;
+        background: white;
+        border: 1px solid #000;
+      "
+    ></div>
+    <button id="colorBtn">Promeni boju</button>
+
+    <hr />
+
+    <div
+      id="hoverDiv"
+      style="
+        width: 100px;
+        height: 50px;
+        background: lightblue;
+        border: 1px solid #000;
+      "
+    >
+      Pređi mišem preko mene
+    </div>
+
+    <hr />
+
+    <button id="countBtn">Klikni me</button>
+    <p id="clickCount">Klikovi: 0</p>
+
+    <script>
+      // ========== 1. ==========
+      const link = document.getElementById("myLink");
+      const hrefValue = link.getAttribute("href");
+      console.log(hrefValue);
+      // ili
+      console.log(link.href);
+
+      // ========== 2. ==========
+      const img = document.getElementById("myImage");
+      img.setAttribute("src", "https://via.placeholder.com/150");
+
+      // ========== 3. ==========
+      const targetBtn = document.getElementById("targetBtn");
+      const enableBtn = document.getElementById("enableBtn");
+
+      enableBtn.addEventListener("click", () => {
+        // Kad se klikne disabled se postavlja na false
+        targetBtn.disabled = false;
+      });
+
+      // ========== 4. ==========
+      const infoDiv = document.getElementById("infoDiv");
+      console.log(infoDiv.dataset.info);
+
+      // ========== 5. ==========
+      const paragraph = document.getElementById("myParagraph");
+      paragraph.classList.add("highlight");
+
+      // ========== 6. ==========
+      const btnRemove = document.getElementById("btnRemove");
+      btnRemove.addEventListener("click", () => {
+        btnRemove.classList.remove("active");
+      });
+
+      // ========== 7. ==========
+      const toggleBtn = document.getElementById("toggleBtn");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+
+      // ========== 8. ==========
+      const changeTextBtn = document.getElementById("changeTextBtn");
+      changeTextBtn.addEventListener("click", () => {
+        changeTextBtn.textContent = "Kliknuto!";
+      });
+
+      // ========== 9. ==========
+      const colorBox = document.getElementById("colorBox");
+      const colorBtn = document.getElementById("colorBtn");
+
+      colorBtn.addEventListener("click", () => {
+        if (colorBox.style.background === "white") {
+          colorBox.style.background = "red";
+        } else {
+          colorBox.style.background = "white";
+        }
+      });
+
+      // ========== 10. ==========
+      const hoverDiv = document.getElementById("hoverDiv");
+
+      hoverDiv.addEventListener("mouseover", () => {
+        hoverDiv.style.width = "200px";
+      });
+
+      hoverDiv.addEventListener("mouseout", () => {
+        hoverDiv.style.width = "100px";
+      });
+
+      // ========== 11.  ==========
+      div.addEventListener("click", (e) => {
+        const newP = document.createElement("p");
+        newP.textContent = "Pritisnuto A";
+        document.body.appendChild(newP);
+      });
+
+      // ========== 12. ==========
+      const countBtn = document.getElementById("countBtn");
+      const clickCount = document.getElementById("clickCount");
+      let count = 0;
+
+      countBtn.addEventListener("click", () => {
+        count++;
+        clickCount.textContent = `Klikovi: ${count}`;
+      });
+    </script>
+  </body>
+</html>
