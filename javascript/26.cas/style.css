@@ -1,0 +1,13 @@
+.book {
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+}
+
+.read {
+  background-color: #6fbe6f;
+}
+
+.hidden {
+  display: none;
+}
