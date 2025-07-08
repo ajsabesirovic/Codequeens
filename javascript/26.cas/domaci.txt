@@ -1,0 +1,112 @@
+-------------------------------------------------- HTML --------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Moja biblioteka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Moja biblioteka</h1>
+
+  <div id="book-list">
+    <!-- Ovde će se prikazivati knjige -->
+  </div>
+
+  <input type="text" id="book-title" placeholder="Naslov knjige" />
+  <button id="add-book">Dodaj knjigu</button>
+
+  <button id="clear-all">Obriši sve knjige</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+-------------------------------------------------- CSS --------------------------------------------------
+
+.book {
+  padding: 8px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+}
+
+.read {
+  background-color: #e0ffe0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+JavaScript za vas:
+
+1.
+
+Kada korisnik unese naslov knjige i klikne na "Dodaj knjigu", 
+kreiraj novi <div> element koji 
+predstavlja knjigu.
+Koristi createElement i appendChild.
+Unesi naslov knjige pomoću innerText.
+Svaka knjiga treba da ima data-id atribut 
+(koristi dataset), koji automatski povećavaš 
+za svaku sledeću knjigu.
+
+2.
+
+Svaka knjiga treba da ima dugme "Pročitano".
+Dodaj dugme unutar <div> knjige.
+Kada se klikne dugme, dodaj klasu
+read na knjigu (koristi classList.add).
+
+3.
+
+Svaka knjiga treba da ima dugme "Ukloni".
+Kada se klikne dugme, ukloni knjigu iz DOM-a 
+(koristi remove()).
+
+
+4.
+
+Dodaj "Obriši sve knjige" dugme.
+Kada se klikne, obriši sve knjige iz liste.
+
+
+5.
+
+Kada se doda knjiga, proveri da li korisnik 
+nije uneo prazan tekst.
+Ako jeste, prikaži alert.
+
+
+6.
+
+Dodaj title atribut svakoj knjizi pomoću setAttribute.
+Vrednost title neka bude isto što i innerText.
+
+
+7.
+
+Ako je knjiga obeležena kao read, 
+ukloni joj title atribut (removeAttribute).
+
+
+8.
+
+Prikaži broj pročitanih knjiga ispod liste (kreiraj <p> u JS-u).
+
+
+
+Koristite document.getElementById i document.querySelectorAll.
+Za data-id koristite dataset (npr. element.dataset.id).
+Brojač pročitanih knjiga ažurirajte svaki put kada se status promeni.
+Pazite da sve funkcionalnosti rade čak i kada nema knjiga na listi.
+
+Dodaj dugme "Sakrij pročitane"
+ koje toggle-uje klasu hidden na svim knjigama
+  koje imaju klasu read.
+
+
