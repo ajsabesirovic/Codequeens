@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bubbling</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .outer {
+        width: 600px;
+        height: 600px;
+        background: lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .middle {
+        width: 400px;
+        height: 400px;
+        background: lightseagreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inner {
+        width: 200px;
+        height: 200px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .clicked {
+        outline: 5px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="middle">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </body>
+</html>
