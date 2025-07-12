@@ -49,5 +49,57 @@
         <div class="inner"></div>
       </div>
     </div>
+
+    <button>Dodaj div!</button>
+
+    <script>
+      // const outer = document.querySelector(".outer");
+      // const middle = document.querySelector(".middle");
+      // const inner = document.querySelector(".inner");
+
+      // Domaci:
+      // outer.addEventListener("click", (e) => {
+      //   outer.classList.toggle("clicked");
+      // });
+
+      // middle.addEventListener("click", (e) => {
+      //   e.stopPropagation();
+      //   middle.classList.toggle("clicked");
+      // });
+
+      // inner.addEventListener("click", (e) => {
+      //   inner.classList.toggle("clicked");
+      // });
+
+      // Event Delegation:
+      // Event delegation je tehnika u JavaScript-u gde se jedan event listener postavlja na zajedničkog roditelja
+      // umesto da se isti listener dodaje na svaki pojedinačni child element.
+      // Kada se event dogodi, event se "propagira" (bubbling) do roditelja,
+      // a zatim se proverava da li je ciljani element (event.target) onaj koji nas zanima.
+
+      // const divs = document.querySelectorAll("div");
+      // divs.forEach((div) => {
+      //   div.addEventListener("click", (e) => {
+      //     console.log("Kliknuli ste na div!");
+      //     e.stopPropagation();
+      //   });
+      // });
+
+      document.querySelector("button").addEventListener("click", () => {
+        const div = document.createElement("div");
+        div.classList.add("outer");
+        div.style.margin = "10px";
+
+        document.body.append(div);
+      });
+
+      // event delegation
+      document.addEventListener("click", (event) => {
+        console.log(event.target);
+        if (event.target.matches("div")) {
+          console.log("kliknuli ste na div.");
+        }
+      });
+    </script>
   </body>
 </html>
