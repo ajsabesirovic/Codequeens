@@ -1,0 +1,72 @@
+<!-- Neki basic eventi -->
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>addEventListener</title>
+    <style>
+      #hoverDiv {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        margin-top: 20px;
+      }
+      .task {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="https://app.daily.dev/posts/stitch-ai-google-s-new-free-ai-tool-creates-stunning-ui-in-a-single-click--itroatukq"
+    >
+      Link do sajta</a
+    >
+
+    <div class="task">
+      <input type="text" id="inputTastatura" placeholder="Pritisni taster" />
+    </div>
+
+    <div class="task">
+      <div id="hoverDiv">Pređi mišem preko mene</div>
+    </div>
+
+    <div class="task">
+      <form id="forma">
+        <input type="text" id="ime" placeholder="Ime" />
+        <button type="submit">Pošalji</button>
+      </form>
+    </div>
+
+    <script>
+      const link = document.querySelector("a");
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+
+      const inputTastatura = document.getElementById("inputTastatura");
+      inputTastatura.addEventListener("keydown", (event) => {
+        console.log("Pritisnut taster:", event.key);
+      });
+
+      const hoverDiv = document.getElementById("hoverDiv");
+      hoverDiv.addEventListener("mouseover", () => {
+        hoverDiv.style.backgroundColor = "lightgreen";
+      });
+      hoverDiv.addEventListener("mouseout", () => {
+        hoverDiv.style.backgroundColor = "lightblue";
+      });
+
+      const forma = document.getElementById("forma");
+      forma.addEventListener("submit", (event) => {
+        event.preventDefault(); // Kada koristimo preventDefault() u formi na submit eventu,
+        // sprečavamo podrazumevano ponašanje forme — a to je slanje podataka serveru i reload stranice.
+        // Umesto toga, možemo da obradimo podatke u js-u bez osvežavanja stranice
+
+        const ime = document.getElementById("ime").value;
+        console.log("Uneto ime:", ime);
+        alert("Forma sprečena! Uneto ime: " + ime);
+      });
+    </script>
+  </body>
+</html>

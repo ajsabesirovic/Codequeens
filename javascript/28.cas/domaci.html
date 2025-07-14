@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registracija</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        max-width: 400px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+      }
+      .radio-group {
+        margin-bottom: 10px;
+      }
+      .checkbox-group {
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registracija</h2>
+
+    <form id="registerForm" action="#" method="post">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" />
+
+      <label for="prezime">Prezime:</label>
+      <input type="text" id="prezime" name="prezime" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="password">Lozinka:</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="confirmPassword">Potvrda lozinke:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" />
+
+      <label for="dob">Datum rođenja:</label>
+      <input type="date" id="dob" name="dob" />
+
+      <div class="radio-group">
+        <span>Pol:</span><br />
+        <label><input type="radio" name="gender" value="Muško" /> Muško</label>
+        <label
+          ><input type="radio" name="gender" value="Žensko" /> Žensko</label
+        >
+      </div>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" id="terms" name="terms" />
+          Prihvatam uslove korišćenja
+        </label>
+      </div>
+
+      <button type="submit">Registruj se</button>
+    </form>
+
+    <script>
+      //    Zadatak:
+
+      // 1) Aktivirajte datu formu tako što ćete:
+      //    - Postaviti event listener na formu koji će koristiti preventDefault()
+      //      da spreči osvežavanje stranice prilikom slanja forme.
+
+      // 2) Za svako tekstualno polje (ime, prezime, email, lozinka, potvrda lozinke, datum rođenja):
+      //    - Dodajte event listener koji proverava da li je polje prazno.
+      //    - Ako je prazno, stavite crveni border, ako nije, stavite zeleni.
+      //    - Na promenu inputa za 'ime, prezime, email, lozinka, potvrda lozinke' dodajte event listener
+      //    - koji ispisuje naziv inputa: vrednost u njemu npr. ime: ajsa
+
+      // 3) Proverite da li se lozinka i potvrda lozinke poklapaju.
+      //    - Ako se ne poklapaju, prikažite alert i ne dozvolite registraciju.
+
+      // 4) Proverite da li je korisnik čekirao uslove korišćenja.
+      //    - Ako nije, prikažite alert i ne dozvolite registraciju.
+
+      // 5) Kada je sve validno, kreirajte objekat sa svim podacima:
+      //    {
+      //      ime,
+      //      prezime,
+      //      email,
+      //      sifra,
+      //      datum,
+      //      pol,
+      //      usloviPrihvaceni
+      //    }
+
+      // 6) Objekat ispišite u konzolu i dodajte ga u niz `korisnici`.
+
+      // 7) Nakon uspešne registracije:
+      //    - Prikažite alert da je registracija uspešna.
+      //    - Resetujte formu i vratite ivice inputa na podrazumevane. -->
+      // <!--
+      // HINTOVI:
+
+      // - Da biste proverili da li je checkbox čekiran (npr. za uslove korišćenja):
+      //   const terms = document.getElementById("terms").checked;
+      //   // .checked vraća true ili false
+
+      // - Da biste proverili koje je radio dugme čekirano (npr. za pol):
+      //   const gender = form.querySelector('input[name="gender"]:checked');
+      //   Ovo vraća ceo input element ili null ako nijedan nije odabran.
+      //   Ako želite samo vrednost (value) na gender
+
+      // - Kada validirate, obavezno proverite da li je `gender` null,
+      //   jer to znači da korisnik nije izabrao nijednu opciju.
+
+      // - Uvek koristite `trim()` za tekstualne vrednosti kako biste uklonili razmake.
+
+      // - Za resetovanje forme koristite:
+      //   form.reset();
+
+      // - Za vraćanje stilova polja:
+      //   input.style.border = "1px solid #ccc";
+    </script>
+  </body>
+</html>
