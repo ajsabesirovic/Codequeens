@@ -131,6 +131,71 @@
 
       // - Za vraćanje stilova polja:
       //   input.style.border = "1px solid #ccc";
+      const form = document.getElementById("registerForm");
+      const inputs = form.querySelectorAll("input");
+      const users = [];
+
+      inputs.forEach((input) => {
+        if (input.type !== "radio" && input.type !== "checkbox") {
+          input.addEventListener("input", () => {
+            console.log(`${input.name}: ${input.value}`);
+            if (!input.value) {
+              console.log(`Polje ${input.name} je prazno`);
+              input.style.border = "2px solid red";
+            } else {
+              input.style.border = "2px solid green";
+            }
+          });
+        }
+      });
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const ime = document.getElementById("ime").value.trim();
+        const prezime = document.getElementById("prezime").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
+        const dob = document.getElementById("dob").value;
+        const gender = form.querySelector('input[name="gender"]:checked');
+        const terms = document.getElementById("terms").checked;
+
+        if (password !== confirmPassword) {
+          alert("Lozinke se ne poklapaju!");
+          return;
+        }
+
+        if (!terms) {
+          alert("Morate prihvatiti uslove korišćenja!");
+          return;
+        }
+
+        const userObj = {
+          ime: ime,
+          prezime,
+          email,
+          password,
+          dob,
+          gender: gender ? gender.value : null,
+          termsAccepted: terms,
+        };
+
+        console.log("Kreirani objekat:", userObj);
+
+        users.push(userObj);
+        console.log("Svi korisnici:", users);
+
+        alert("Registracija uspešna! Pogledaj konzolu za detalje.");
+
+        form.reset();
+        inputs.forEach((input) => {
+          if (input.type !== "radio" && input.type !== "checkbox") {
+            input.style.border = "1px solid #ccc";
+          }
+        });
+      });
     </script>
   </body>
 </html>
