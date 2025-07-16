@@ -1,0 +1,13 @@
+Za ovaj domaci koristite formu i knjige koje ste vec pravile i dodajte sledece funkcionalnosti
+
+1. Forma
+
+    Na submit proveravate podatke (npr. da ime mora da ima bar 3 karaktera).
+    Ako provera ne uspe, prikažite custom grešku ispod odgovarajućeg inputa.
+    Greške napišite u <span> ili <p> elementima i neka tekst bude crvene boje
+
+2. Knjige
+
+    Dodajte input za datum pored postojećeg inputa za naziv knjige.
+    Ubacite dugme koje će, kada se klikne, sortirati knjige od najnovije ka najstarijoj (koristite datum koji unesete).
+
