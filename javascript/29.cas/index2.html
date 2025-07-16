@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brojač klikova</title>
+  </head>
+  <body>
+    <div class="task">
+      <button id="btnBrojac">Klikni me</button>
+      <p>Broj klikova: <span id="brojKlikova">0</span></p>
+    </div>
+
+    <script>
+      const btnBrojac = document.getElementById("btnBrojac");
+      const brojKlikova = document.getElementById("brojKlikova");
+
+      let brojac = 0;
+
+      function povecajFn() {
+        brojac++;
+        brojKlikova.textContent = brojac;
+      }
+
+      btnBrojac.addEventListener("click", povecajFn);
+
+      btnBrojac.addEventListener("click", () => {
+        console.log("Click iz anonimne funkcije");
+      });
+
+      // removeEventListener uklanja odredjenu fju za odredjeni event
+      // setTimeout izvrsava funkciju(prvi argument) nakon nekoliko milisekundi(drugi argument)
+
+      // Ovde nakon 5 sekundi brišemo oba listenera
+      setTimeout(() => {
+        // Ovaj radi jer referencira ISTU funkciju povecajFn
+        btnBrojac.removeEventListener("click", povecajFn);
+
+        // Ovaj NE RADI jer je arrow funkcija nova instanca
+        btnBrojac.removeEventListener("click", () => {
+          console.log("CLICK");
+        });
+        // Ispravno bi bilo da arrow funkciju definišemo van i da je prosledimo kao sto smo uradili i sa povecajFn
+      }, 5000);
+
+      // Kako setTimeout radi:
+      // posto se js izvrsava line by line at a time, kada naidje na setTimeout on 'zakaze' izvrsavanje
+      // te funkcije nakon nekoliko ms, a nastavi sa izvrsavanjem preostalog koda, dakle setTimeout ne blokira ostatak koda od izvrsenja
+
+      setTimeout(() => {
+        console.log("SetTimeout");
+      }, 3000);
+      console.log("Console.log posle Settimeout-a");
+
+      // ispis u konzoli bi izgledao ovako:
+      // Console.log posle Settimeout-a
+      // SetTimeout (nakon 3 sekunde)
+    </script>
+
+    <script src="date.js"></script>
+  </body>
+</html>

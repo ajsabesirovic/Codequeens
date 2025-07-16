@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input i change</title>
+  </head>
+  <body>
+    <input type="text" id="search" placeholder="Pretraga..." />
+    <input type="text" id="myInput" />
+
+    <input type="email" id="email" placeholder="Unesite email" />
+
+    <script>
+      // Prvi input sluša EVENT 'input'
+      // 'input' se aktivira svaki put kad korisnik nešto unese
+      document.getElementById("search").addEventListener("input", function () {
+        console.log("Input event:", this.value);
+        // this u ovoj callback funkciji postaje objekat na koji smo slusamo event, u ovom slucaju je to input sa id-em search
+        // (obratite paznju da nije arrow jer onda gubi vrednost this)
+      });
+
+      // Drugi input sluša EVENT 'change'
+      // 'change' se aktivira kad polje izgubi fokus i vrednost se promenila
+      document
+        .getElementById("myInput")
+        .addEventListener("change", function () {
+          console.log("Change event:", this.value);
+        });
+
+      // Provera unetog emaila: mora da sadrži "@"
+      document.getElementById("email").addEventListener("change", function () {
+        const email = this.value;
+        if (!email.includes("@")) {
+          alert("Molimo unesite validnu email adresu.");
+        }
+      });
+    </script>
+  </body>
+</html>
