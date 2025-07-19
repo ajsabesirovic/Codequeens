@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registracija</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        max-width: 400px;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 5px;
+      }
+      .error-message {
+        color: red;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+        display: none;
+      }
+      .radio-group,
+      .checkbox-group {
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registracija</h2>
+
+    <form id="registerForm" action="#" method="post">
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" />
+      <div class="error-message" id="ime-error"></div>
+
+      <label for="prezime">Prezime:</label>
+      <input type="text" id="prezime" name="prezime" />
+      <div class="error-message" id="prezime-error"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <div class="error-message" id="email-error"></div>
+
+      <label for="password">Lozinka:</label>
+      <input type="password" id="password" name="password" />
+      <div class="error-message" id="password-error"></div>
+
+      <label for="confirmPassword">Potvrda lozinke:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" />
+      <div class="error-message" id="confirmPassword-error"></div>
+
+      <label for="dob">Datum rođenja:</label>
+      <input type="date" id="dob" name="dob" />
+      <div class="error-message" id="dob-error"></div>
+
+      <div class="radio-group">
+        <span>Pol:</span><br />
+        <label><input type="radio" name="gender" value="Muško" /> Muško</label>
+        <label
+          ><input type="radio" name="gender" value="Žensko" /> Žensko</label
+        >
+        <div class="error-message" id="gender-error"></div>
+      </div>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" id="terms" name="terms" />
+          Prihvatam uslove korišćenja
+        </label>
+        <div class="error-message" id="terms-error"></div>
+      </div>
+
+      <button type="submit">Registruj se</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("registerForm");
+      const users = [];
+
+      function showError(inputId, message) {
+        const errorElement = document.getElementById(`${inputId}-error`);
+        errorElement.textContent = message;
+        errorElement.style.display = "block";
+        document.getElementById(inputId).style.border = "2px solid red";
+      }
+
+      function clearError(inputId) {
+        const errorElement = document.getElementById(`${inputId}-error`);
+        errorElement.textContent = "";
+        errorElement.style.display = "none";
+        document.getElementById(inputId).style.border = "2px solid green";
+      }
+
+      function addInputListeners() {
+        const fields = [
+          "ime",
+          "prezime",
+          "email",
+          "password",
+          "confirmPassword",
+          "dob",
+        ];
+        fields.forEach((field) => {
+          const input = document.getElementById(field);
+          input.addEventListener("input", () => {
+            const value = input.value.trim();
+
+            if (field === "ime" || field === "prezime") {
+              if (value.length >= 3) clearError(field);
+            }
+
+            if (field === "email") {
+              if (value.includes("@") && value.length >= 5) clearError(field);
+            }
+
+            if (field === "password") {
+              if (value.length >= 6) clearError(field);
+            }
+
+            if (field === "confirmPassword") {
+              const password = document.getElementById("password").value;
+              if (value === password) clearError(field);
+            }
+
+            if (field === "dob" && value !== "") {
+              clearError(field);
+            }
+          });
+        });
+
+        const genderInputs = form.querySelectorAll('input[name="gender"]');
+        genderInputs.forEach((input) => {
+          input.addEventListener("change", () => {
+            document.getElementById("gender-error").style.display = "none";
+          });
+        });
+
+        const termsCheckbox = document.getElementById("terms");
+        termsCheckbox.addEventListener("change", () => {
+          if (termsCheckbox.checked) {
+            document.getElementById("terms-error").style.display = "none";
+          }
+        });
+      }
+
+      addInputListeners();
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const ime = document.getElementById("ime").value.trim();
+        const prezime = document.getElementById("prezime").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
+        const dob = document.getElementById("dob").value;
+        const gender = form.querySelector('input[name="gender"]:checked');
+        const terms = document.getElementById("terms").checked;
+
+        let valid = true;
+
+        if (ime.length < 3) {
+          showError("ime", "Ime mora sadrzati bar 3 karaktera.");
+          valid = false;
+        }
+
+        if (prezime.length < 3) {
+          showError("prezime", "Prezime mora sadrzati bar 3 karaktera.");
+          valid = false;
+        }
+
+        if (!email.includes("@") || email.length < 5) {
+          showError("email", "Unesite validan email.");
+          valid = false;
+        }
+
+        if (password.length < 6) {
+          showError("password", "Lozinka mora imati najmanje 6 karaktera.");
+          valid = false;
+        }
+
+        if (password !== confirmPassword) {
+          showError("confirmPassword", "Lozinke se ne poklapaju.");
+          valid = false;
+        }
+
+        if (!dob) {
+          showError("dob", "Unesite datum rođenja.");
+          valid = false;
+        }
+
+        if (!gender) {
+          document.getElementById("gender-error").textContent =
+            "Odaberite pol.";
+          document.getElementById("gender-error").style.display = "block";
+          valid = false;
+        }
+
+        if (!terms) {
+          document.getElementById("terms-error").textContent =
+            "Morate prihvatiti uslove.";
+          document.getElementById("terms-error").style.display = "block";
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        const userObj = {
+          ime,
+          prezime,
+          email,
+          password,
+          dob,
+          gender: gender.value,
+          termsAccepted: terms,
+        };
+
+        console.log("Kreirani objekat:", userObj);
+        users.push(userObj);
+        console.log("Svi korisnici:", users);
+
+        alert("Registracija uspešna!");
+        form.reset();
+
+        const allInputs = form.querySelectorAll("input");
+        allInputs.forEach((input) => {
+          if (input.type !== "radio" && input.type !== "checkbox") {
+            input.style.border = "1px solid #ccc";
+          }
+        });
+
+        const allErrors = form.querySelectorAll(".error-message");
+        allErrors.forEach((err) => (err.style.display = "none"));
+      });
+    </script>
+  </body>
+</html>
