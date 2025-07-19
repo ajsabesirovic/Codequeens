@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Filmova</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+      }
+
+      h2 {
+        margin-top: 40px;
+      }
+
+      input,
+      button,
+      select {
+        padding: 8px;
+        margin: 5px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li {
+        background: white;
+        padding: 10px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 4px;
+      }
+
+      .movie-controls button {
+        margin-left: 5px;
+      }
+
+      .section {
+        margin-top: 20px;
+      }
+
+      .search-sort {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista filmova za gledanje</h1>
+
+    <div class="search-sort">
+      <input type="text" id="search" placeholder="Pretraga po nazivu..." />
+      <select id="sort">
+        <option value="date">Sortiraj po datumu</option>
+        <option value="name">Sortiraj po imenu</option>
+      </select>
+    </div>
+
+    <input type="text" id="movieInput" placeholder="Dodaj film..." />
+    <button onclick="addMovie()">Dodaj</button>
+
+    <div class="section">
+      <h2>Filmovi za gledanje</h2>
+      <ul id="movieList"></ul>
+    </div>
+
+    <div class="section">
+      <h2>Odgledano</h2>
+      <ul id="watchedList"></ul>
+    </div>
+
+    <script>
+      let movies = [];
+      let watched = [];
+
+      function addMovie() {
+        const input = document.getElementById("movieInput");
+        const name = input.value.trim();
+        if (!name) return;
+
+        movies.push({
+          id: Date.now(),
+          name: `${name} ${new Date()}`,
+          dateAdded: new Date(),
+        });
+
+        input.value = "";
+        renderMovies();
+      }
+
+      function markAsWatched(id) {
+        const movie = movies.find((m) => m.id === id);
+        movies = movies.filter((m) => m.id !== id);
+        watched.push(movie);
+        renderMovies();
+      }
+
+      function deleteMovie(id, fromWatched = false) {
+        if (fromWatched) {
+          watched = watched.filter((m) => m.id !== id);
+        } else {
+          movies = movies.filter((m) => m.id !== id);
+        }
+        renderMovies();
+      }
+
+      function renderMovies() {
+        const searchTerm = document
+          .getElementById("search")
+          .value.toLowerCase();
+        const sortBy = document.getElementById("sort").value;
+
+        let filtered = movies.filter((m) =>
+          m.name.toLowerCase().includes(searchTerm)
+        );
+
+        if (sortBy === "name") {
+          filtered.sort((a, b) => a.name.localeCompare(b.name));
+        } else {
+          filtered.sort((a, b) => b.dateAdded - a.dateAdded);
+        }
+
+        const movieList = document.getElementById("movieList");
+        movieList.innerHTML = "";
+        filtered.forEach((movie) => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+          <span>${movie.name}</span>
+          <div class="movie-controls">
+            <button onclick="markAsWatched(${movie.id})">Odgledano</button>
+            <button onclick="deleteMovie(${movie.id})">Obriši</button>
+          </div>
+        `;
+          movieList.appendChild(li);
+        });
+
+        const watchedList = document.getElementById("watchedList");
+        watchedList.innerHTML = "";
+        watched.forEach((movie) => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+          <span>${movie.name}</span>
+          <button onclick="deleteMovie(${movie.id}, true)">Obriši</button>
+        `;
+          watchedList.appendChild(li);
+        });
+      }
+
+      document.getElementById("search").addEventListener("input", renderMovies);
+      document.getElementById("sort").addEventListener("change", renderMovies);
+    </script>
+  </body>
+</html>
