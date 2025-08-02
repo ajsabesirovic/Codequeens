@@ -1,0 +1,39 @@
+Dostupne rute na jsonplaceholder API
+/posts 
+/comments
+/users 
+/todos 
+/albums
+
+Zadaci sa casa:
+1. Dohvati sve postove
+2. Dohvati korisnika po ID-ju
+3. Dodaj novi post
+4. Pošalji komentar na post
+5. Izbriši post
+
+
+Zadaci za domaci:
+1. Prikaži naslove svih postova u <ul> listi
+Zadatak:
+
+Napravi praznu <ul id="postList"> u HTML-u
+Koristi fetch() da dohvatiš sve postove
+Ispiši svaki naslov kao <li> u toj listi
+
+
+2. Prikaži ime korisnika kad se klikne dugme
+HTML:
+<button id="loadUser">Učitaj korisnika</button>
+<p id="userName"></p>
+
+3. Unesi ID posta i prikaži njegov naslov i tekst
+HTML:
+<input id="postIdInput" type="number" placeholder="Unesi ID posta" />
+<button id="getPost">Prikaži post</button>
+<div id="postResult"></div>
+
+4. Prikaži sve zadatke korisnika 1 i oboj završene
+HTML:
+<ul id="todoList"></ul>
+
