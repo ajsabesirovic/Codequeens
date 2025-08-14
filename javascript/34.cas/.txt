@@ -1,0 +1,30 @@
+Ako funkciju označiš sa async, ona uvek vraća Promise.
+Čak i ako ne koristiš await unutra, rezultat se automatski uvija u Promise.
+
+Npr.
+async function hello() {
+  return "Zdravo"; // ovo se automatski pakuje u Promise.resolve("Zdravo")
+}
+
+hello().then(msg => console.log(msg)); // "Zdravo"
+
+=======================================================
+
+Kako radi await
+await "pauzira" izvršavanje koda dok se Promise ne reši.
+
+Ne blokira ceo program, već samo tu async funkciju.
+
+Rezultat await je vrednost koju Promise vraća.
+
+function cekaj(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function test() {
+  console.log("Prvo");
+  await cekaj(2000); // pauza od 2 sekunde
+  console.log("Posle 2 sekunde");
+}
+
+test();
