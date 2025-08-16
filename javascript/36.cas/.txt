@@ -1,0 +1,66 @@
+    1. Osnovni zadatak – čekanje
+
+    Napiši async funkciju waitAndPrint koja:
+    koristi setTimeout preko Promise da čeka 2 sekunde,
+    zatim ispisuje "Gotovo čekanje".
+    
+    👉 Testiraj tako što pozoveš funkciju i proveriš redosled ispisivanja u konzoli.
+
+    2. Fetch podataka sa API-ja
+
+    Koristi fetch (npr. JSONPlaceholder) i napiši async funkciju getUsers koja:
+    preuzima listu korisnika,
+    parsira JSON,
+    ispisuje u konzoli imena svih korisnika.
+
+    3. Error handling
+
+    Napravi async funkciju getPost koja:
+
+    prima id posta kao parametar,
+    pokušava da dohvati post sa "https://jsonplaceholder.typicode.com/posts/{id}",
+    ako API vrati grešku (npr. id = -1), prikaže "Greška pri dohvatanju podataka".
+
+    👉 Koristi try...catch blok.
+
+    4. Višestruki async pozivi
+
+    Napiši async funkciju getUserAndPosts(userId) koja:
+
+    Dohvata korisnika sa "https://jsonplaceholder.typicode.com/users/{userId}",
+    Zatim dohvata sve postove tog korisnika sa "https://jsonplaceholder.typicode.com/posts?userId={userId}",
+    Na kraju ispisuje korisnikovo ime i broj njegovih postova.
+
+    5. Paralelno vs. sekvencijalno
+
+    Napravi dve async funkcije:
+
+    getDataSlow() – vraća Promise koji se reši posle 3 sekunde,
+    getDataFast() – vraća Promise koji se reši posle 1 sekunde.
+
+    👉 Kreiraj testSequential gde se čeka jedna pa druga funkcija (trajanje 4 sekunde).
+    👉 Kreiraj testParallel gde koristiš Promise.all i meriš vreme (trajanje 3 sekunde).
+
+    6. Mini zadatak – vežba sa loop-om
+
+    Napravi async funkciju printNumbers koja:
+    koristi for petlju od 1 do 5,
+    na svakoj iteraciji čeka 1 sekundu (uz await new Promise + setTimeout),
+    ispisuje trenutni broj.
+
+    👉 Očekivani ispis:
+
+    1 (nakon 1s)
+    2 (nakon 2s)
+    3 (nakon 3s)
+    4 (nakon 4s)
+    5 (nakon 5s)
+
+    7.
+
+    Napravi async funkciju searchPosts(keyword) koja:
+    dohvata sve postove sa "https://jsonplaceholder.typicode.com/posts",
+    filtrira one čiji naslov (title) sadrži zadati keyword,
+    vraća listu filtriranih postova.
+
+    👉 Bonus: ako nema rezultata, vrati "Nema postova za dati keyword".
